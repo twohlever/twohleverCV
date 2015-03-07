@@ -35,8 +35,8 @@ right  = 0.8in]{geometry}
 \newboolean{resume}
 \newboolean{references}
 
-\setboolean{resume}{true}  % {true} % {false}
-\setboolean{references}{false} % {true}
+\setboolean{resume}{false}  % {true} % {false}
+\setboolean{references}{true} % {true}
 
 
 
@@ -171,8 +171,8 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 	\begin{reslistsection}
 		\reslistentry Languages: Perl, R, bash/tcsh, C/C++,  SQL, \LaTeX{}
 		\reslistentry Alignment/Assembly Software: CLC Assembly Cell, Newbler, ARACHNE, Velvet, BLAST, bwa  % maq, nucmer, BLAST
-		\reslistentry Genomic Software: CLC Genomics Workbench, CLC Genomics Server, RDP, JalView, mothur, usearch/otupipe, AbundantOTU, RasMol, MOE
-		\reslistentry Service Interfaces: JIRA, HelpSpot, Confluence§
+		\reslistentry Genomic Software: CLC Genomics Workbench, CLC Genomics Server, CLC Biomedical Genomics Workbench, Ingenuity Variant Analysis, RDP, JalView, mothur, usearch/otupipe, AbundantOTU
+		\reslistentry Service Interfaces: JIRA, HelpSpot, Confluence, SalesForce, ServiceCloud
 	\end{reslistsection}
 \end{ressection}
 
@@ -186,7 +186,24 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 
 \begin{ressection}{Research \& Work Experience}
 
-	\begin{ressubsection}{Jan. 2012 - Present}{Application Scientist}{CLC bio}{Customer Support}{Cambridge, MA}
+	\begin{ressubsection}{Oct. 2014 - Present}{Senior Scientist}{QIAGEN Bioinformatics}{Advanced Genomics Applications}{Chicago, IL}
+		\begin{reslistsection}
+			\reslistentry Provide hands on support to enable users to successfully harness our product lines to meet their advanced needs including modifying and establishing procedures for the team to meet these needs
+			\reslistentry Analyze, define, and solve complex scientific and technical issues from researchers, scientists and clinician users of \textbf{CLC bio, Ingenuity, and Biobase tools}
+			\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
+			\begin{reslistsection}
+				\reslistentry Continue to fulfill  \emph{Application Scientist} responsibilities held with CLC bio
+				\reslistentry Gather, record and escalate customer feedback to guarantee a high quality and consistent customer interface
+				\reslistentry Select methods, techniques and evaluation criteria for the scientific support team initiatives in collaboration with management
+				\reslistentry Establish and revise systems and protocols the team uses for customer engagement
+			\end{reslistsection}
+			}
+			\reslistentry Partner with global development, product management, sales, and marketing departments to resolve customer and process issues
+		\end{reslistsection}
+	\end{ressubsection}
+
+
+	\begin{ressubsection}{Jan. 2012 - Oct. 2014}{Application Scientist}{CLC bio}{Customer Support}{Cambridge, MA}
 		\begin{reslistsection}
 			\reslistentry Interpret, replicate, and propose solutions for a broad range of customer questions and problems
 			\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
@@ -299,9 +316,9 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 		
 		\reslistentry \respubsection{Jumpstart Consortium Human Microbiome Project Data Generation Working Group (2012)}{\href{http://www.plosone.org/article/info\%3Adoi\%2F10.1371\%2Fjournal.pone.0039315}{Evaluation of 16S rDNA-Based Community Profiling for Human Microbiome Research}}{PLoS ONE}{7(6): e39315. doi:10.1371/journal.pone.0039315}
 		
-		\reslistentry \respubsection{The Human Microbiome Project Consortium}{\href{http://www.nature.com/nature/journal/v486/n7402/full/nature11234.html}{Structure, function and diversity of the healthy human microbiome}}{Nature}{486, 207Ð214 (14 June 2012) doi:10.1038/nature11234}
+		\reslistentry \respubsection{The Human Microbiome Project Consortium}{\href{http://www.nature.com/nature/journal/v486/n7402/full/nature11234.html}{Structure, function and diversity of the healthy human microbiome}}{Nature}{486, 207ï¿½214 (14 June 2012) doi:10.1038/nature11234}
 		
-		\reslistentry \respubsection{The Human Microbiome Project Consortium}{\href{http://www.nature.com/nature/journal/v486/n7402/full/nature11209.html}{A framework for human microbiome research}}{Nature}{486, 215Ð221 (14 June 2012) doi:10.1038/nature11209}
+		\reslistentry \respubsection{The Human Microbiome Project Consortium}{\href{http://www.nature.com/nature/journal/v486/n7402/full/nature11209.html}{A framework for human microbiome research}}{Nature}{486, 215ï¿½221 (14 June 2012) doi:10.1038/nature11209}
 		
 		\reslistentry \respubsection{Human Microbiome Jumpstart Reference Strains Consortium}{\href{http://www.sciencemag.org/content/328/5981/994.abstract}{A catalog of reference genomes from the human microbiome}}{Science}{2010 May 21;328(5981):994-9}
 		
@@ -339,7 +356,7 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 %		\reslistentry 2007-2012: Association for Women in Science (AWIS) Active Member; MA
 %		\reslistentry 2007-2009: Ubuntu Local Community (LoCo) Team Member; MA
 %		\reslistentry 2006: Archer Center Leadership Conference Host; RPI
-%		\reslistentry 2005-2007: WomenÕs Mentor Program: Mentor; RPI
+%		\reslistentry 2005-2007: Women \textquotesingle s Mentor Program: Mentor; RPI
 %		\reslistentry 2005-2007: Society of Biological Sciences: Secretary/Webmaster; RPI
 %	\end{reslistsection}
 %\end{ressection}
@@ -368,12 +385,13 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 \pagebreak[4] % create new page for references (so can be provided separately)
 \begin{ressection}{references}
 	\begin{resrefsection}
+%% Ask Bela, Arne, Ashlee Earl
 		\resrefentry{Chad Nusbaum}{Co-Director, Sequence \& Analysis Program, The Broad Institute}{chad@broadinstitute.org}{617.714.7880}
 		\resrefentry{Michael Feldgarden}{Research Scientist I, The Broad Institute}{feldgard@broadinstitute.org}{617.714.7921}
 		\resrefentry{Sarah Young}{Bioinformatics Supervisor, The Broad Institute}{stowey@broadinstitute.org}{617.714.8508}
 		\resrefentry{Curt Breneman}{Professor, RPI Chemistry Department}{brenec@rpi.edu}{518.276.2781}
-		\resrefentry{Matthew Sundling}{Former Graduate Student Mentor. Owner, Sundling Consulting}{matthew.sundling@gmail.com}{518.598.6544}
-		\resrefentry{Christopher Bystroff}{Professor, RPI Biology Department}{bystrc@rpi.edu}{518.276.3185}
+%		\resrefentry{Matthew Sundling}{Former Graduate Student Mentor. Owner, Sundling Consulting}{matthew.sundling@gmail.com}{518.598.6544}
+%		\resrefentry{Christopher Bystroff}{Professor, RPI Biology Department}{bystrc@rpi.edu}{518.276.3185}
 %		\resrefentry{Nan Williams}{Learning Skills Specialist, RPI Advising and Learning Assistance Center}{willin2@rpi.edu}{518.276.6269}
 	\end{resrefsection} 
 \end{ressection} 
