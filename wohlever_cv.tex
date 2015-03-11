@@ -35,7 +35,7 @@ right  = 0.8in]{geometry}
 \newboolean{resume}
 \newboolean{references}
 
-\setboolean{resume}{false}  % {true} % {false}
+\setboolean{resume}{true}  % {true} % {false}
 \setboolean{references}{false} % {true}
 
 
@@ -171,8 +171,7 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 	\begin{reslistsection}
 		\reslistentry NGS Data: Illumina, 454, Ion Torrent, SOLiD, Pacific Biosciences, Complete Genomics, Helicos
 		\reslistentry Programming: Perl, R, bash/tcsh, C/C++,  SQL, \LaTeX{}
-		\reslistentry Alignment/Assembly Software: CLC Assembly Cell, Newbler, BLAST, ARACHNE, Velvet, BLAST, bwa, nucmer,   % maq,
-		\reslistentry Genomic Software: CLC Genomics Workbench, CLC Genomics Server, CLC Biomedical Genomics Workbench, Ingenuity Variant Analysis, RDP, JalView, mothur, usearch/otupipe, AbundantOTU
+		\reslistentry Genomic Software: CLC Genomics Workbench, CLC Assembly Cell, CLC Servers, Biomedical Genomics Workbench, Ingenuity Variant Analysis, RDP, JalView, mothur, usearch/otupipe, AbundantOTU, Newbler, ARACHNE, Velvet, BLAST, bwa, nucmer, %  maq,
 		\reslistentry Service Interfaces: JIRA, HelpSpot, Confluence, SalesForce, ServiceCloud
 	\end{reslistsection}
 \end{ressection}
@@ -210,18 +209,18 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 			\end{reslistsection}
 			}
 			\reslistentry Effectively and clearly communicate software issues with support team, developers, and customers
-			\reslistentry Collaborate on research, drafting, and editing of customer facing text eg. Frequently Asked Questions (FAQ)
+			\reslistentry Collaborate on research, drafting, and editing of customer facing text eg. Frequently Asked Questions
 		\end{reslistsection}
 	\end{ressubsection}
 
 	\begin{ressubsection}{Jan. 2010 - Jan. 2012}{Associate Computational
 	Biologist}{The Broad Institute of MIT and Harvard}{Microbial Systems and Communities}{Cambridge, MA}
 		\begin{reslistsection}
-			\reslistentry Develop and maintain 454 16S filtering and classification pipeline [Perl, \LaTeX{}, R and mothur] 
+			\reslistentry Develop and maintain 454 16S filtering and classification pipeline [Perl, \LaTeX{}, R, mothur] 
 			\reslistentry Process 16 ongoing 16S projects consisting of in-house and external data
 			\reslistentry Improved accuracy of 16S-based microbial diversity estimations 
 			\reslistentry Facilitate transition of the 16S pipeline to the Software Engineering team
-			\reslistentry Install, support, and maintain group specific software [mothur, RDP, usearch]
+			%	\reslistentry Install, support, and maintain group specific software [mothur, RDP, usearch, JalView, etc.]
 		\end{reslistsection}
 	\end{ressubsection}
 
@@ -231,7 +230,7 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 		\begin{reslistsection}
 			\reslistentry Propose, develop, and maintain 454 analysis pipeline reducing error and analyst time by 90\% [Perl, \LaTeX{}, and Gnuplot]: 322 genomes completed including \textit{Brucella}, \textit{Vibrio cholerea}, HMP, \textit{E. coli}, \textit{Staphlyococcus aureus}, and \textit{Neisseria ghonnorea} strains
 			\reslistentry Train the genome finishing team to utilize and upgrade bacterial analysis software
-			\reslistentry Characterize and propose solutions for failures in assembly, sequencing, library construction, and DNA sample preparation 
+			\reslistentry Characterize and propose solutions for sequencing, library construction, and DNA sample failures
 			\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
 			\begin{reslistsection}
 					\reslistentry Resolve mis-assemblies due to repeat structure and sequencing/cloning bias
@@ -241,19 +240,24 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 			\end{reslistsection}
 			} % End resume exclude
 			\reslistentry Preliminary analysis of new sequencing technologies for assembly: Illuminia, Pacific Biosciences
-			\reslistentry Mentor three junior analysts to successfully accomplish similar responsibilities
+			%	\reslistentry Mentor three junior analysts to successfully accomplish similar responsibilities
 			
 		\end{reslistsection}
 	\end{ressubsection}
 
+
+	\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
 	\begin{ressubsection}{May 2005 - July 2007}{Undergraduate Research Assistant}{Rensselaer Polytechnic Institute}{Rensselaer Exploratory Center for Cheminformatics Research}{Troy, NY}
 		\begin{reslistsection}
 			\reslistentry Design and implement amino acid oligo classifier to predict small molecule binding propensity
 			\reslistentry Collaborate with outside researchers on code development for atom type project
 			\reslistentry Curate multiple datasets and performed descriptor calculations and model generation
-			\reslistentry Webmaster for the Rensselaer Exploratory Center for Cheminformatics Research (RECCR)
+			 \reslistentry Webmaster for the Rensselaer Exploratory Center for Cheminformatics Research (RECCR)
 		\end{reslistsection}
 	\end{ressubsection}
+	} % End resume exclude
+
+
 \end{ressection}
 	
 	
