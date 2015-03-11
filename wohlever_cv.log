@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  7 MAR 2015 12:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  11 MAR 2015 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -381,36 +381,20 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 239.
  [1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Missing character: There is no ï in font cmr10!
-Missing character: There is no ¿ in font cmr10!
-Missing character: There is no ½ in font cmr10!
-Missing character: There is no ï in font cmr10!
-Missing character: There is no ¿ in font cmr10!
-Missing character: There is no ½ in font cmr10!
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX w
+arning (ext4): destination with the same identifier (name{page.}) has been alre
+ady used, duplicate ignored
 <to be read again> 
                    \relax 
 l.326 	\end{reslistsection}
-                            [2]pdfTeX warning (ext4): destination with the same
- identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.398 }{}
-          % End resume exclusion [3]
+                            [2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 399.
-
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
-
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.399 \end{document}
-                     [4]
+                     [3]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
  (./wohlever_cv.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 399.
@@ -422,7 +406,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 399.
 Here is how much of TeX's memory you used:
  6846 strings out of 493315
  102694 string characters out of 6137904
- 223188 words of memory out of 5000000
+ 222188 words of memory out of 5000000
  10266 multiletter control sequences out of 15000+600000
  7493 words of font info for 26 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -439,10 +423,10 @@ l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on wohlever_cv.pdf (4 pages, 160463 bytes).
+Output written on wohlever_cv.pdf (3 pages, 158905 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
