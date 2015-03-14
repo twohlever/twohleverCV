@@ -26,23 +26,33 @@ right  = 0.8in]{geometry}
 \pagestyle{scrheadings}
 
 
+%
+% Set Font
+%
+\usepackage{baskervald}
+\usepackage[T1]{fontenc}
+
 
 
 %
-% RESUME OR CV
+% RESUME OR CV | Cover Letter | References 
 %
 \usepackage{ifthen} % usage:  \ifthenelse{\boolean{resume}}{True thing}{False thing}
 \newboolean{resume}
 \newboolean{references}
+\newboolean{coverletter}
+
+
 
 \setboolean{resume}{false}  % {true} % {false}
 \setboolean{references}{false} % {true}
+\setboolean{coverletter}{true} % {true}
 
 
 
 
 %
-% DEFINE PERSONAL INFO
+% DEFINE PERSONAL INFORMATION
 %
 \newcommand{\authorname}[1]{\renewcommand{\authorname}{#1}}
 \newcommand{\authorFname}[1]{\renewcommand{\authorFname}{#1}}
@@ -61,7 +71,7 @@ right  = 0.8in]{geometry}
 \citystatezip{Flossmoor, IL 60422}
 \phoneC{+1.860.490.3525}
 \phoneH{+1.857.277.5701}
-\email{theresa.wohlever@gmail.com}
+\email{theresa.wohlever@qiagen.com}
 
 
 
@@ -79,7 +89,8 @@ right  = 0.8in]{geometry}
 }
 
 %
-% DEFINE FOOTER%
+% DEFINE FOOTER
+%
 \ifthenelse{\boolean{resume}}{}{ % Excludefooter if resume
 \cfoot{\small{\Letter\hspace{0.7 mm}\email} \hspace{.5 mm} \textbar\textbar \hspace{.5mm} {\Telefon\hspace{0.7 mm}\phoneC}}
 }
@@ -91,10 +102,10 @@ right  = 0.8in]{geometry}
 %
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
 
-% Summary Section
+%% Define Summary Section
 \newenvironment{summarysection}[0]{\vspace{0pt}\noindent\sl}{}
 
-% Segmented sections
+%% Define Segmented sections
 \newenvironment{ressection}[1]{\section*{#1}\vspace{-5pt}}{}
 
 \newenvironment{reslistsection}{
@@ -114,12 +125,13 @@ right  = 0.8in]{geometry}
 
 
 
-% Publications
+%% Define Publications Section
+%
 % 1: Authors; 2: Title; 3: Journal; 4: Date/Issue 
 % Human Microbiome Jumpstart Reference Strains Consortium. \href{http://www.sciencemag.org/content/328/5981/994.abstract}{A catalog of reference genomes from the human microbiome}. Science. 2010 May 21;328(5981):994-9.
 \newenvironment{respubsection}[4]{ \raggedright\noindent {#1}. {\emph{#2}}. {\bf{#3}}. {#4}. }{}
 
-%% References section 
+%% Define References section 
 \newenvironment{resrefsection}{
 	\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
 }
@@ -144,6 +156,40 @@ right  = 0.8in]{geometry}
 
 \begin{document}
 \pagenumbering{gobble} %% No page numbers in my CV
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  BEGIN Cover Letter
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  BEGIN CV/Resume
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 \begin{center}
 \header
 \end{center}
@@ -167,8 +213,8 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 \begin{ressection}{Specialized Skills}
 	\begin{reslistsection}
 		\reslistentry \emph{NGS Data}: Illumina, 454, Ion Torrent, SOLiD, Pacific Biosciences, Complete Genomics, Helicos
-		\reslistentry \emph{Programming}: Perl, R, bash/tcsh, C/C++,  SQL, \LaTeX{}
-		\reslistentry \emph{Genomic Software}: CLC Genomics Workbench, CLC Assembly Cell, CLC Servers, Biomedical Genomics Workbench, Ingenuity Variant Analysis, RDP, JalView, mothur, usearch/otupipe, AbundantOTU, Newbler, ARACHNE, Velvet, BLAST, bwa, nucmer, %  maq,
+		\reslistentry \emph{Programming}: Perl, R, bash/tcsh, C/C++,  SQL, \LaTeX{}, gcc, git, svn, SQL
+		\reslistentry \emph{Genomic Software}: CLC Genomics Workbench, CLC Assembly Cell, CLC Servers, Biomedical Genomics Workbench, Ingenuity Variant Analysis, RDP, JalView, mothur, usearch/otupipe, AbundantOTU, Newbler, ARACHNE, Velvet, BLAST, bwa, nucmer %  maq,
 		\reslistentry \emph{Service Interfaces}: JIRA, HelpSpot, Confluence, SalesForce, ServiceCloud
 	\end{reslistsection}
 \end{ressection}
@@ -190,6 +236,7 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 			\reslistentry Modify and establish procedures to promptly and comprehensively meet customer needs
 			\reslistentry Partner with global R\&D, product management, sales, and marketing teams to improve processes
 			%	\reslistentry Establish and revise systems and protocols the team uses for customer engagement
+			\reslistentry Contribute to internal documentation for consistent quality support across the globaly integrated team 
 		\end{reslistsection}
 	\end{ressubsection}
 
@@ -210,8 +257,7 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 		\end{reslistsection}
 	\end{ressubsection}
 
-	\begin{ressubsection}{Jan. 2010 - Jan. 2012}{Associate Computational
-	Biologist}{The Broad Institute of MIT and Harvard}{Microbial Systems and Communities}{Cambridge, MA}
+	\begin{ressubsection}{Jan. 2010 - Jan. 2012}{Associate Computational Biologist}{The Broad Institute of MIT and Harvard}{Microbial Systems and Communities}{Cambridge, MA}
 		\begin{reslistsection}
 			\reslistentry Develop and maintain 454 16S filtering and classification pipeline [Perl, \LaTeX{}, R, mothur] 
 			\reslistentry Process 16 ongoing 16S projects consisting of in-house and external data
@@ -392,4 +438,11 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 	\end{resrefsection} 
 \end{ressection} 
 }{} % End resume exclusion
+
+
+
+
+
+
+
 \end{document}
