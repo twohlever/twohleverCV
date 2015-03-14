@@ -1,0 +1,34 @@
+
+
+% http://tex.stackexchange.com/questions/70740/how-to-combine-two-latex-files
+
+
+
+\documentclass{article}
+
+% start simulating your situation
+% \usepackage{filecontents}
+
+% cover letter input file
+% \begin{filecontents*}{coverLetter}
+\input{coverLetter}
+
+% CV input file
+%\begin{filecontents*}{cv}
+\input{wohlever_cv}
+
+
+\immediate\write18{pdflatex -shell-escape coverLetter}
+\immediate\write18{pdflatex -shell-escape coverLetter}
+\immediate\write18{pdflatex -shell-escape coverLetter}
+
+\immediate\write18{pdflatex -shell-escape wohlever_cv}
+\immediate\write18{pdflatex -shell-escape wohlever_cv}
+
+
+
+\usepackage{pdfpages}
+\begin{document}
+\includepdf[pages=-]{coverLetter}
+\includepdf[pages=-,landscape]{cv}
+\end{document}
