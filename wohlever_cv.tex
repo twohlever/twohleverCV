@@ -62,7 +62,7 @@ right  = 0.8in]{geometry}
 \phoneC{+1.860.490.3525}
 \phoneH{+1.857.277.5701}
 \email{theresa.wohlever@gmail.com}
-% \webpage{\url{ }}
+
 
 
 
@@ -72,17 +72,16 @@ right  = 0.8in]{geometry}
 % 
 \newcommand{{\header}}{
 {\bf \Huge{\authorname}}\\
-{\Large{f.k.a. \authorFname}}\\
+{f.k.a. \authorFname}\\
 \emph{\citizen}\\
-\email\\
-\phoneC (c) \phoneH (h)\\
+\email   \hspace{1.5 mm} \textbar\textbar \hspace{1.5 mm} \phoneC \\
 \streetaddress \citystatezip\\
 }
 
 %
 % DEFINE FOOTER%
 \ifthenelse{\boolean{resume}}{}{ % Excludefooter if resume
-\cfoot{\small{\Letter\hspace{0.7 mm}\email} \hspace{1.5 mm} \textbar\textbar \hspace{1.5 mm} {\Telefon\hspace{0.7 mm}\phoneC}}
+\cfoot{\small{\Letter\hspace{0.7 mm}\email} \hspace{.5 mm} \textbar\textbar \hspace{.5mm} {\Telefon\hspace{0.7 mm}\phoneC}}
 }
 
 
@@ -151,15 +150,13 @@ right  = 0.8in]{geometry}
 
 
 %
-% OBJECTIVE
+% OBJECTIVE / SUMMARY
 % 
-% \begin{ressection}{objective}
-% Full time employment at Broad Institute in the field of bioinformatics and computational biology which will utilize, refine, and complement skills and techniques developed through undergraduate study
 \begin{summarysection}
-Experienced bioinformatician, at home with open source and commercial bioinformatics resources as well as combining analyses through scripting. Effective troubleshooter with excellent communication and organizational skills, who brings together these attributes to provide consistent, high level, quality bioinformatics support to biologists and bioinformaticians of varied backgrounds.
+Experienced bioinformatician, proficient with open source and commercial bioinformatics resources as well as combining analyses through scripting. Effective troubleshooter with excellent communication and organizational skills, who brings together these attributes to provide consistent, high level, quality bioinformatics support to researchers of varied backgrounds.
 \end{summarysection}
 
-% \end{ressection}
+
 
 
 
@@ -169,10 +166,10 @@ Experienced bioinformatician, at home with open source and commercial bioinforma
 
 \begin{ressection}{Specialized Skills}
 	\begin{reslistsection}
-		\reslistentry NGS Data: Illumina, 454, Ion Torrent, SOLiD, Pacific Biosciences, Complete Genomics, Helicos
-		\reslistentry Programming: Perl, R, bash/tcsh, C/C++,  SQL, \LaTeX{}
-		\reslistentry Genomic Software: CLC Genomics Workbench, CLC Assembly Cell, CLC Servers, Biomedical Genomics Workbench, Ingenuity Variant Analysis, RDP, JalView, mothur, usearch/otupipe, AbundantOTU, Newbler, ARACHNE, Velvet, BLAST, bwa, nucmer, %  maq,
-		\reslistentry Service Interfaces: JIRA, HelpSpot, Confluence, SalesForce, ServiceCloud
+		\reslistentry \emph{NGS Data}: Illumina, 454, Ion Torrent, SOLiD, Pacific Biosciences, Complete Genomics, Helicos
+		\reslistentry \emph{Programming}: Perl, R, bash/tcsh, C/C++,  SQL, \LaTeX{}
+		\reslistentry \emph{Genomic Software}: CLC Genomics Workbench, CLC Assembly Cell, CLC Servers, Biomedical Genomics Workbench, Ingenuity Variant Analysis, RDP, JalView, mothur, usearch/otupipe, AbundantOTU, Newbler, ARACHNE, Velvet, BLAST, bwa, nucmer, %  maq,
+		\reslistentry \emph{Service Interfaces}: JIRA, HelpSpot, Confluence, SalesForce, ServiceCloud
 	\end{reslistsection}
 \end{ressection}
 
