@@ -15,46 +15,72 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%
+% newlfm documentation: http://ctan.mirrorcatalogs.com/macros/latex/contrib/newlfm/newlfm.pdf
+% 
+
+
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt,letterpaper,dateno,sigright]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+\documentclass[10pt,letterpaper,sigleft]{newlfm} 
+% Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+
 
 %
 % Set Font
 %
 \usepackage{baskervald}
 \usepackage[T1]{fontenc}
-%%\usepackage{charter} % Use the Charter font for the document text
+
+
 
 \newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1in}{\vspace{0.7in}
-\includegraphics[width=1.2\linewidth]{img/Qiagen.jpg}}} % Company/institution logo at the top left of the page
+\includegraphics[width=1\linewidth]{img/Qiagen.jpg}}} % Company/institution logo at the top left of the page
 \makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
-
-%\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
-%\newlfmP{addrfromphone} % Print a phone number under the sender's address
-%\newlfmP{addrfromemail} % Print an email address under the sender's address
-%\PhrPhone{Phone} % Customize the "Telephone" text
-%\PhrEmail{Email} % Customize the "E-mail" text
-
 \lthUiuc % Print the company/institution logo
 
+\newlfmP{sigsize=20pt} % Slightly decrease the height of the signature field
+
+
+%
+% Adjust vertical spacing
+%
+\newlfmP{dateskipbefore=-.5in} % Remove vertical spacing - Date
+\newlfmP{addrfromskipbefore=0in}  % Remove vertical spacing - To address
+\newlfmP{addrfromskipafter=0in}    % Remove vertical spacing  - To address
+\newlfmP{unprtop=0pt} % Top unprintable area
+\newlfmP{topmarginskip=0pt} % Top of page to header block
+\newlfmP{headermarginskip=0pt}  % vertical space between header line and date
+\newlfmP{footermarginsize=8.4pt}
+%\newlfmP{unprbottom=0pt}
+
+
 %----------------------------------------------------------------------------------------
-%	YOUR NAME AND CONTACT INFORMATION
+%	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
 \namefrom{Theresa Wohlever} % Name
 
+\dateset{ \today{} }
+
 \addrfrom{
-\today\\[12pt] % Date
-%2253 Hutchison Road \\ % Address
-%Flossmoor, IL 60422
-}
+              2253 Hutchison Road \\ % Address
+              Flossmoor, IL 60422
+ }
+ 
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\PhrPhone{C} % Customize the "Telephone" text
+\phonefrom{+1.860.490.3525} % Phone number
 
-%\phonefrom{+1.860.490.3525} % Phone number
 
-%\emailfrom{theresa.wohlever@qiagen.com} % Email address
+% \newlfmP{addrfromemail} % Print an email address under the sender's address
+% \PhrEmail{E} % Customize the "E-mail" text
+% \emailfrom{theresa.wohlever@qiagen.com} % Email address
+
+
 
 %----------------------------------------------------------------------------------------
 %	ADDRESSEE AND GREETING/CLOSING
@@ -66,7 +92,6 @@
 \nameto{Tuan Nguyen} % Addressee of the letter above the to address
 
 \addrto{
-Phyllis Gray \\ % To address
 QIAGEN Redwood City \\
 1700 Seaport Blvd, 3rd Floor \\
 Redwood City, CA 94063
@@ -81,13 +106,13 @@ Redwood City, CA 94063
 %	LETTER CONTENT
 %----------------------------------------------------------------------------------------
 
-Blazing the trail from sample to insight is a treacherous journey. There are brambles, thickets, uneven terrain, partially accurate maps, and trodden trails leading to dead ends. It is the mission of QIAGEN Bioinformatics to clear the way for our customers to enjoy a pleasant stroll to their desired destination.
+Blazing the trail from sample to insight is a treacherous journey. There are brambles, thickets, uneven terrain, partially accurate maps, and trodden trails leading to dead ends. It is the mission of QIAGEN Bioinformatics to clear the way for our customers to enjoy a pleasant stroll to their desired destination. The skills and experienced I have acquired from my work at the Broad Insititute, CLC bio, and QIAGEN make me uniquely qualified to guide our customers from sample to insight.
 
-As the Broad Institute designated bioinformatician for the Human Microbiome Project (HMP) I was a torch bearer on this journey. I identified the optimal sequencing technology for investigators to answer their biological questions in a cost effective way.  After their data was off the sequencers, I developed and provided automated reports the biologist team depended on. This required wrangling large quantities of diverse data types into clear figures for quick downstream decisions. In my my transition to the CLC Bio support team I expanded my horizon from assembly analysis to every facet of secondary data analysis. I have successfully guided customers to overcome the challenges they face; this often requires data sharing for investigation. In addition to honing these problem solving skills, I have excelled in the art of clear communication across multiple teams with differing backgrounds. I know the difference in dialect between a biologist and a computer scientist. Perhaps, most importantly, I am adept at translating what I understand from those teams into sweet digestible pieces for customers. In combination with overcoming scientific and technical challenges that I know will make improvements in human health, it is in this translational space that I find much satisfaction. 
+As the Broad Institute designated bioinformatician for the Human Microbiome Project (HMP) I identified the optimal sequencing technology for investigators to answer their biological questions in a cost effective way.  After their data was off the sequencers, I developed and provided automated reports the biologist team depended on. This required wrangling large quantities of diverse data types into clear figures for quick downstream decisions. In my my transition to the CLC bio support team I expanded my horizon from assembly analysis to every facet of secondary sequencing data analysis. I have successfully guided customers to overcome the challenges they face, often requiring transmission of large data sets for investigation. In addition to honing these problem solving skills, I have excelled in the art of clear communication across multiple teams with differing backgrounds. I know the difference in dialect between a biologist and a computer scientist. Perhaps, most importantly, I am adept at translating what I understand from those teams into palatable pieces for customers. In combination with overcoming scientific and technical challenges it is in this interfacing and translational space that I find much satisfaction. 
 
-You do not see an advanced degree on my CV, however, I invested my years of undergraduate study at a top tier Institution. Immediately following I gained over four years of employment experience at the Broad Institute - a research intensive academic environment. There I regularly hashed out challenges with ALLPATHS and GATK developers. My experience in this community has allowed me to excel in my current role, which also requires an advanced degree. 
+Although I do not have an advanced degree, I have four years of employment experience at the Broad Institute - a research intensive academic environment. There I contributed to 6 publications:  2 landing in Nature and 1 in Science. My experience in this community has allowed me to excel in my current role where an advanced degree is required. Before the Broad, I invested my years of undergraduate study at globally ranked institution for science and engineering. There I laid a strong development and problem solving foundation through courses such as Data Mining and Database Systems.
 
-I am interested in the GISS Integrated Solutions Bioinformatics Scientist role to broaden my skill set and overcome new challenges. I would like a deeper relationship with the Ingenuity product development team as well as our clinical customers. I believe I would be a valuable asset to this team because of my ability to share insight regarding the sequencing data and performance in the upstream secondary analysis. Perhaps, most importantly, I will serve to further unify the CLC product and Ingenuity product development teams. I hope that this will aid in making the customer's journey from sample to insight a smooth and pleasant one.
+I am interested in the GISS Integrated Solutions Bioinformatics Scientist role to broaden my skill set and overcome new challenges. I would like a deeper relationship with the Ingenuity product development team as well as our clinical customers. I believe I would be a valuable asset to this team because of my ability to share insight regarding the sequencing data and performance in the upstream secondary analysis. Finally, I will serve to further unify the CLC product and Ingenuity product development teams. I hope that this will aid in making the customer's journey from sample to insight a smooth and pleasant one.
 
 Thank you very much for your consideration of my application; thank you especially for making this opportunity available to all members of the GISS team.
 
