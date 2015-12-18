@@ -1,20 +1,20 @@
-Dear Lasse,
+Dear Henrik and Lasse,
 
-As a U.S. based member of the support team since January 2012, I have been trained, and remotely trained others, on nearly every feature of the CLC product portfolio. More recently, I have branched out into supporting Ingenuity products; this has given me the opportunity to better understand whole workflows through QIAGEN Bioinformatics products. 
+I am writing to you to let you know of my interest in the Software Test Engineer position, advertised on the QIAGEN careers website. Given the posted description, it seems my abilities and aspirations align extremely well; I believe I could provide great value in that role. I hope you do not mind that I am contacting you directly: application for positions within QIAGEN requires my direct supervisor's approval, so I wanted to reach out to you about this position in confidence initially.
 
-I am contacting you because I'm interested in redirecting my career towards development. When scanning through the QIAGEN career opportunities, I noticed a Software Test Engineer role, which appears to be something that I may excel in. As a member of the support team I have grown to recognize when the Workbench is functioning as intended, when it's not, and most importantly, when new features have introduced interesting side effects that don't appear to be inherently wrong on the surface, but would be appropriate to reconsider. I have communicated complex issues effectively and clearly such that it was possible for the development team to understand and resolve them. Finally, the time zone I reside in could be particularly beneficial for this role: I could test commits completed during the Danish work day such that feedback can be provided in time for the following Danish morning - perhaps this could lead to a more rapid turnaround going forward. If, however, there might be other positions you are aware of that I could be well suited for, I'd also be interested to consider those.
+My personal strengths, background in bioinformatics and extensive experience with the products of the QIAGEN Bioinformatics software line lend themselves perfectly to a Software Test Engineer role, both for our current products and for those we develop in the future.
 
-If my potential transition into development might be something you, or interested parties, may wish to explore further, please let me know. I'd be happy address any questions you may have.
+I have, for many years, worked productively and efficiently with both the Support and Engineering teams in Aarhus. The timezone I reside in has often proved beneficial, giving several hours of overlap with the Danish office, followed by uninterrupted working time such that any information needed for further action can be delivered for the start of the next Danish working day.
 
-I have not yet mentioned my interest in a career change to my teammates and direct supervisor, so I would appreciate your confidence in this request. 
+If a potential transition into your team is something you, or others, wish to explore further with me, please do let me know. I'd be happy to address any questions you may have. While the Software Test Engineer role aligns very well with my skills, if there are other, perhaps as yet unadvertised, roles that you feel would better suit my abilities and interests, I would be very happy to hear from you about these.
+
+I have not yet mentioned my interest in a career change to my teammates and direct supervisor, so I appreciate in advance your confidence in this matter.
 
 Thank you for your consideration.
 
 Cheers,
 
 Theresa
-
-
 
 
 
