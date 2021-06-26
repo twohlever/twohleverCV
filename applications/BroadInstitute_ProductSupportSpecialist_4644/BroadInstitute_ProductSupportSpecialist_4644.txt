@@ -1,0 +1,30 @@
+
+## https://broadinstitute.wd1.myworkdayjobs.com/en-US/broad_institute/job/Cambridge-MA/Product-Support-Specialist_4644-1
+## Hiring Manager: Forest Handford
+## https://www.linkedin.com/in/foresthandford/
+## http://www.eastcoastgames.com/
+
+
+
+
+Product Support Specialist
+Cambridge, MA
+
+Job Description
+
+Are you skilled at solving technical problems for customers? Do you want to make a difference and help cure cancer? We are a small, lively team of software engineers and computational scientists. Our tools and platforms are used by thousands of researchers across the globe, processing petabytes of data to advance science and medicine. We support data operations that enable scientists to create and improve treatment based on genomic research. We are building technology to dramatically improve human health and enable new treatments. We are crafting the creation of world-class, scalable cloud-based data resources and pipelines to drive scientific discovery.
+
+We are seeking a talented and motivated Product Support Specialist to join our team as we chart a new course in genomics. We are a core part of the Broad Institute, a deeply-collaborative scientific institution that is transforming medicine and human health by building software solutions to process and analyze scientific data on an unprecedented scale. No medical, genomics, or scientific background is required, just an enthusiasm to improve the world of science and medicine, an ability to debug and troubleshoot software, and the ability to collaborate with scientists and other stakeholders.
+
+You enjoy turning around customer requests and proactively resolving problems. You are able to work independently and know when to ask for help. You enjoy solving complicated problems and understand good customer service practices. You have good attention to detail and take pride in the relationships you build. You are interested to learn about sequencing, genomics and the scientific work of the Broad Institute. You are excited about engaging scientists.
+
+Requirements
+Related experience as a Product Support Specialist, Support Engineer, Sales Engineer, Delivery Engineer, or Customer Service Engineer, though we will strongly consider great candidates with other backgrounds or less experience.
+
+Excellent customer-facing skills: estimation, communication, discussion management, conflict resolution and ability to present complex concepts in an easy to understand manner.
+
+Experience with or interest in working with a wide variety of technologies and on diverse problems.
+
+Having some of the following: experience troubleshooting complex distributed systems; experience working in Unix/Linux environments, including basic shell scripting; or experience with a programming language (e.g., Java, Python, Scala, Ruby).
+
+
