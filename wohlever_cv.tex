@@ -1,151 +1,79 @@
-\documentclass[10pt, letter, oneside, final]{scrartcl}
+\documentclass[10pt, letterpaper, oneside, final]{article}
 
-\usepackage{soul} % headers & footers
-\usepackage{scrpage2}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage{multirow}
-\usepackage{marvosym} % icons for letter and telephone in footer
-\usepackage{verbatim} % allow for multiline comments
-
-
-\usepackage[    % Simple settings for margins
-top    = 0.8in,
-bottom = 1.2in,
-left   = 0.8in,
-right  = 0.8in]{geometry}
-
-
-\usepackage{hyperref} %\  href{<my_url>}{<description>}
-\hypersetup{
-	hidelinks, 
-	breaklinks=true,
-}
-
-
-\scshape 
-\pagestyle{scrheadings}
-
-
-%
-% Set Font
-%
-\usepackage{baskervald}
-\usepackage[T1]{fontenc}
-
-
-
-%
-% RESUME OR CV | Cover Letter | References 
-%
-\usepackage{ifthen} % usage:  \ifthenelse{\boolean{resume}}{True thing}{False thing}
-\newboolean{resume}
-\newboolean{references}
-\newboolean{coverletter}
-
-
-
-\setboolean{resume}{false}  % {true} % {false}
-\setboolean{references}{false} % {true}
-\setboolean{coverletter}{true} % {true}
-
-
-
-
-%
-% DEFINE PERSONAL INFORMATION
-%
-\newcommand{\authorname}[1]{\renewcommand{\authorname}{#1}}
-\newcommand{\authorFname}[1]{\renewcommand{\authorFname}{#1}}
-\newcommand{\citizen}[1]{\renewcommand{\citizen}{#1}}
-\newcommand{\email}[1]{\renewcommand{\email}{#1}}
-\newcommand{\streetaddress}[1]{\renewcommand{\streetaddress}{#1}}
-\newcommand{\citystatezip}[1]{\renewcommand{\citystatezip}{#1}}
-\newcommand{\phoneC}[1]{\renewcommand{\phoneC}{#1}}
-\newcommand{\phoneH}[1]{\renewcommand{\phoneH}{#1}}
-%\newcommand{\webpage}[1]{\renewcommand{\webpage}{#1}}
-
-\authorname{Theresa Wohlever}
-\authorFname{Theresa Hepburn}
-\citizen{Citizen of The United States}
-\streetaddress{2253 Hutchison Road }
-\citystatezip{Flossmoor, IL 60422}
-\phoneC{+1.860.490.3525}
-\phoneH{+1.857.277.5701}
-\email{theresa.wohlever@gmail.com}
-
-
-
-
+\input{preamble}
 
 %
 % DEFINE HEADER
-% 
+%
+\renewcommand{\headrulewidth}{0pt}
+
 \newcommand{{\header}}{
-{\bf \Huge{\authorname}}\\
-{f.k.a. \authorFname}\\
-\emph{\citizen}\\
-\email   \hspace{1.5 mm} \textbar\textbar \hspace{1.5 mm} \phoneC \\
-\streetaddress \citystatezip\\
+	\begin{center}
+		{\bf \Huge{\authorname}}\\
+		{née \authorFname}\\
+			\streetaddress \hspace{0.3 mm} \citystatezip \\
+			\phoneC \hseparate
+			\email
+	\end{center}
 }
 
-%
-% DEFINE FOOTER
-%
-\ifthenelse{\boolean{resume}}{}{ % Exclude footer if resume
-\cfoot{\small{\Letter\hspace{0.7 mm}\email} \hspace{.5 mm} \textbar\textbar \hspace{.5mm} {\Telefon\hspace{0.7 mm}\phoneC}}
-}
 
 
 
 %
 % DEFINE FORMATTING COMMANDS AND ENVIRONMENTS
 %
-\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
-
-%% Define Summary Section
-\newenvironment{summarysection}[0]{\vspace{0pt}\noindent\sl}{}
-
 %% Define Segmented sections
-\newenvironment{ressection}[1]{\section*{#1}\vspace{-5pt}}{}
 
-\newenvironment{reslistsection}{
-  \vspace{0pt}
-  \begin{itemize}
-    \setlength{\itemsep}{0.1pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}
-}{\end{itemize}}
+% \begin{ressection}{Research \& Work Experience}
+\newenvironment{ressection}[1]{
+	{\vspace{5pt}} \\
+	{}
+	{\LARGE{#1}}
+	{\vspace{-9pt}} \\
+	{\noindent\rule{\textwidth}{0.5pt}}
+}
 
-\newcommand{\reslistentry}{\raggedright\item}
 
+% \begin{ressubsection}
+%	#1: {May 2016 - Jan. 2021}
+% #2: {Senior Bioinformatician}
+%	#3: {QIAGEN Bioinformatics}
+%	#4: {Custom Solutions}
+%	#5: {Chicago, IL}
 \newenvironment{ressubsection}[5]{
 	\noindent {\bf #3}  #5 \vspace{-2pt} \\
 	{\emph{#2}}, #1 \vspace{-7pt}
 }
 
 
+\newenvironment{reslistsection}{
+  \begin{itemize}
+    \setlength{\itemsep}{0.2pt}
+    \setlength{\parskip}{-1pt}
+    \setlength{\parsep}{-1pt}
+}{\end{itemize}}
+
+\newcommand{\reslistentry}{\raggedright\item}
+
+
+
 
 %% Define Publications Section
-%
-% 1: Authors; 2: Title; 3: Journal; 4: Date/Issue 
-% Human Microbiome Jumpstart Reference Strains Consortium. \href{http://www.sciencemag.org/content/328/5981/994.abstract}{A catalog of reference genomes from the human microbiome}. Science. 2010 May 21;328(5981):994-9.
+% 1: Authors; 2: Title; 3: Journal; 4: Date/Issue
 \newenvironment{respubsection}[4]{ \raggedright\noindent {#1}. {\emph{#2}}. {\bf{#3}}. {#4}. }{}
 
-%% Define References section 
+
+%% Define References section
 \newenvironment{resrefsection}{
 	\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
 }
 {\end{tabular*}}
-
 \newcommand{\resrefentry}[4]{{\bf #1} & #2 \\ #3 & #4 \\ & \\}
 
 
 
-
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %%
@@ -153,62 +81,60 @@ right  = 0.8in]{geometry}
 %%
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 \pagenumbering{gobble} %% No page numbers in my CV
 
-
-\begin{center}
 \header
-\end{center}
-
 
 %
 % OBJECTIVE / SUMMARY
-% 
-\begin{summarysection}
-Experienced bioinformatician, proficient with open source and commercial bioinformatics resources as well as combining analyses through scripting. Effective troubleshooter with excellent communication and organizational skills, who brings together these attributes to provide consistent, high level, quality bioinformatics support and services to researchers and clinicians of varied backgrounds.
-\end{summarysection}
+%
+	Experienced manager and mentor of bioinformaticians proficient with open source and commercial bioinformatics resources. Effective troubleshooter with excellent communication and organizational skills who brings together these attributes to provide consistent, high level, quality bioinformatics support and services to researchers and clinicians of varied backgrounds.
+	\emph{Seeking opportunities for growth in a nonprofit research environment} that emphasizes team focused values and collaboration.
 
+\medspace
 
-
-
-\begin{comment}
 %
 % SKILLS
 %
 
-
-\begin{ressection}{Specialized Skills}
-	\begin{reslistsection}
-		\reslistentry \emph{NGS Data}: Illumina, Pacific Biosciences, 454, Ion Torrent %, SOLiD,  Complete Genomics, Helicos
-		
-		\reslistentry \emph{Genomic Software}: CLC Genomics Workbench, CLC Assembly Cell, CLC Servers, Biomedical Genomics Workbench, BLAST, Ingenuity Variant Analysis % ,  Newbler, ARACHNE, Velvet  maq, RDP, JalView, mothur, usearch/otupipe, AbundantOTU, , bwa, nucmer
-		\reslistentry \emph{Programming}: R, bash/tcsh, Perl,  \LaTeX{}, Java  % , C/C++, SQL % gcc, git, svn
-		\reslistentry \emph{Internal Systems}: JIRA, Jenkins, Confluence, HelpSpot, SalesForce, ServiceCloud
-	\end{reslistsection}
-\end{ressection}
-
-
-\end{comment}
-
-
-
-
-%
-% RESEARCH EXPERIENCE
-%
-
-\begin{ressection}{Research \& Work Experience}
-
-
-	\begin{ressubsection}{May 2016 - Present}{Senior Bioinformatician}{QIAGEN Bioinformatics}{Custom Solutions}{Chicago, IL}
+% Exclude this section if resume
+\ifthenelse{\boolean{resume}}{}{
+	\begin{ressection}{Specialized Experience} I demonstrate familiarity with the following resources listed left to right from greatest proficiency to least
 		\begin{reslistsection}
-			\reslistentry Define scope and statement of work (SOW) for custom bioinformatic solutions
-			\reslistentry Work directly with clients to implement project requirements
-			\reslistentry Test, release, and support client use of custom tools
+			\reslistentry \emph{NGS Data}: Illumina, Pacific Biosciences, Ion Torrent %, SOLiD, Complete Genomics, Helicos, 454,
+			\reslistentry \emph{Genomic Software}: CLC Genomics/Biomedical Workbench, CLC Assembly Cell, CLC Servers, IGV, BLAST, Newbler, bwa, ARACHNE, Velvet, maq, RDP, JalView, mothur, usearch/otupipe, AbundantOTU,  nucmer
+			\reslistentry \emph{Programming}: bash/tcsh, Perl, R, \LaTeX{}, git, svn, Eclipse IDE%% , Java  % , C/C++, SQL % gcc, git, svn
+			\reslistentry \emph{Internal Systems}: MS Teams, JIRA, Jenkins, Confluence, SalesForce  %% ServiceCloud, HelpSpot
+		\end{reslistsection}
+	\end{ressection}
+} % End resume exclude
+
+
+%
+% RESEARCH & WORK EXPERIENCE
+%
+\begin{ressection}{Research \& Work History}
+%% \includegraphics[width=1\linewidth]{img/Qiagen.jpg}}}
+	\begin{ressubsection}{Jan. 2021 - Present}{Custom Services Manager}{QIAGEN Digital Insights (QDI)}{Custom Solutions and Services}{Toledo, OH}
+		\begin{reslistsection}
+			\reslistentry Lead transcontinental team of 4 bioinformaticians and 4 software engineers
+			\reslistentry Set customer expectations regarding deliverables and timelines for custom service projects
+			\reslistentry Obtain, allocate, and prioritize resources to meet customer expectations
+			\reslistentry Sustain multimillion USD client partnerships via "White Glove" level of care
+		\end{reslistsection}
+	\end{ressubsection}
+
+
+
+	\begin{ressubsection}{May 2016 - Jan. 2021}{Senior Bioinformatician}{QIAGEN Bioinformatics}{Custom Solutions}{Chicago, IL}
+		\begin{reslistsection}
+			\reslistentry Manage multi-year projects for high value clients
+			\reslistentry Define requirements, scope, and Statement of Work (SOW) for custom bioinformatic solutions and services
+			\reslistentry Communicate with clients and developers to define and implement project requirements
+			\reslistentry Test, release, and support client use of custom bioinformatic software
 		\end{reslistsection}
 	\end{ressubsection}
 
@@ -219,8 +145,8 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 			\reslistentry Enable users to successfully harness CLC and Ingenuity product lines to fulfill analysis objectives
 			\reslistentry Modify and establish procedures to promptly and comprehensively meet customer needs
 			\reslistentry Partner with global R\&D, product management, sales, and marketing teams to improve processes
-			%	\reslistentry Establish and revise systems and protocols the team uses for customer engagement
-			\reslistentry Contribute to internal documentation for consistent quality support across the globally integrated team 
+			\reslistentry Establish and revise systems and protocols the team uses for customer engagement
+			\reslistentry Contribute to internal documentation for consistent quality support across the globally integrated team
 		\end{reslistsection}
 	\end{ressubsection}
 
@@ -228,77 +154,93 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 	\begin{ressubsection}{Jan. 2012 - Oct. 2014}{Application Scientist}{CLC bio}{Customer Support}{Cambridge, MA}
 		\begin{reslistsection}
 			\reslistentry Interpret, replicate, and propose solutions for a broad range of customer questions and problems
-			\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
+
+			% Exclude this section if resume
+			\ifthenelse{\boolean{resume}}{}{
 			\begin{reslistsection}
-					\reslistentry Troubleshoot and guide assessmentt of \emph{de novo} assembly and read mapping results
+					\reslistentry Troubleshoot and guide assessment of \emph{de novo} assembly and read mapping results
 					\reslistentry Provide basic recommendations for transcriptomic related workflows, ie. RNA-Seq
 					\reslistentry Outline steps to accomplish variant detection and downstream analysis goals
-					\reslistentry Troubleshoot issues with the Workbench, Server, and Command Line Tools
+					\reslistentry Troubleshoot issues with the CLC Workbench, CLC Server, and CLC Command Line Tools
 			\end{reslistsection}
-			}
+			} % End resume exclude
+
 			\reslistentry Effectively and clearly communicate software issues with support team, developers, and customers
 			\reslistentry Collaborate on research, drafting, and editing of customer facing text eg. Frequently Asked Questions
-			\reslistentry Mentor support colleagues through transition to HelpSpot system
+			\reslistentry Mentor support colleagues through support system transitions
 		\end{reslistsection}
 	\end{ressubsection}
 
 	\begin{ressubsection}{Jan. 2010 - Jan. 2012}{Associate Computational Biologist}{The Broad Institute of MIT and Harvard}{Microbial Systems and Communities}{Cambridge, MA}
 		\begin{reslistsection}
-			\reslistentry Develop and maintain 454 16S filtering and classification pipeline [Perl, \LaTeX{}, R, mothur] 
+			\reslistentry Develop and maintain 454 16S filtering and classification pipeline [Perl, \LaTeX{}, R, mothur]
 			\reslistentry Process 16 ongoing projects consisting of in-house and external data
-			\reslistentry Improved accuracy of 16S-based microbial diversity estimations 
-			%    \reslistentry Facilitate transition of the 16S pipeline to the Software Engineering team
-			%	\reslistentry Install, support, and maintain group specific software [mothur, RDP, usearch, JalView, etc.]
+
+			% Exclude this section if resume
+			\ifthenelse{\boolean{resume}}{}{
+			\reslistentry Improved accuracy of 16S-based microbial diversity estimations
+			\reslistentry Facilitate transition of the 16S pipeline to the Software Engineering team
+			\reslistentry Install, support, and maintain group specific software [mothur, RDP, usearch, JalView, etc.]
+			} % End resume exclude
+
 		\end{reslistsection}
 	\end{ressubsection}
-
-
 
 	\begin{ressubsection}{July 2007 - Jan. 2010}{Bioinformatics Assembly Analyst}{The Broad Institute of MIT and Harvard}{Assembly Computation and Development Core}{Cambridge, MA}
 		\begin{reslistsection}
-			\reslistentry Propose, develop, and maintain 454 analysis pipeline reducing error and analyst time by 90\% [Perl, \LaTeX{}, and Gnuplot]: 322 genomes completed including \textit{Brucella}, \textit{Vibrio cholerea}, HMP, \textit{E. coli}, \textit{Staphlyococcus aureus}, and \textit{Neisseria ghonnorea} strains
-			\reslistentry Train the genome finishing team to utilize and upgrade bacterial analysis software
-			\reslistentry Characterize and propose solutions for sequencing, library construction, and DNA sample failures
-			\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
-			\begin{reslistsection}
-					\reslistentry Resolve mis-assemblies due to repeat structure and sequencing/cloning bias
-					\reslistentry Recommend sequencing technology, library type, and coverage for extreme GC genomes
-					\reslistentry Quickly identify and alert sequencing and projects teams to mislabeled DNA
-					\reslistentry Diagnose contaminant sequence sources as collaborators or Broad lab process
-			\end{reslistsection}
+			\reslistentry Propose, develop, and maintain 454 analysis pipeline reducing error and analyst time by 90\%
+
+			% Exclude this section if resume
+			\ifthenelse{\boolean{resume}}{}{
+				[Perl, \LaTeX{}, and Gnuplot]: 322 genomes completed including \textit{Brucella}, \textit{Vibrio cholerea}, HMP, \textit{E. coli}, \textit{Staphlyococcus aureus}, and \textit{Neisseria ghonnorea} strains
+				\reslistentry Train the genome finishing team to utilize and upgrade bacterial analysis software
 			} % End resume exclude
-			\reslistentry Preliminary analysis of new sequencing technologies for assembly: Illuminia, Pacific Biosciences
-			\reslistentry Mentor three junior analysts to successfully accomplish similar responsibilities
-			
+
+			\reslistentry Characterize and propose solutions for sequencing, library construction, and DNA sample failures
+
+			% Exclude this section if resume
+			\ifthenelse{\boolean{resume}}{}{
+				\begin{reslistsection}
+						\reslistentry Resolve misassemblies due to repeat structure and sequencing/cloning bias
+						\reslistentry Recommend sequencing technology, library type, and coverage for extreme GC genomes
+						\reslistentry Quickly identify and alert sequencing and projects teams to mislabeled DNA
+						\reslistentry Diagnose contaminant sequence sources as collaborators or Broad lab process
+				\end{reslistsection}
+
+				\reslistentry Mentor three junior analysts to successfully accomplish similar responsibilities
+			} % End resume exclude
+
+			\reslistentry Preliminary analysis of new sequencing technologies for assembly: Illuminia (Solexa), Pacific Biosciences
 		\end{reslistsection}
 	\end{ressubsection}
 
-
-	\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
-	\begin{ressubsection}{May 2005 - July 2007}{Undergraduate Research Assistant}{Rensselaer Polytechnic Institute}{Rensselaer Exploratory Center for Cheminformatics Research}{Troy, NY}
-		\begin{reslistsection}
-			\reslistentry Design and implement amino acid oligo classifier to predict small molecule binding propensity
-			\reslistentry Collaborate with outside researchers on code development for atom type project
-			\reslistentry Curate multiple datasets, perform descriptor calculations, and model generation
-			 \reslistentry Webmaster for the Rensselaer Exploratory Center for Cheminformatics Research (RECCR)
-		\end{reslistsection}
-	\end{ressubsection}
+	% Exclude this section if resume
+	\ifthenelse{\boolean{resume}}{}{
+		\begin{ressubsection}{May 2005 - July 2007}{Undergraduate Research Assistant}{Rensselaer Polytechnic Institute}{Rensselaer Exploratory Center for Cheminformatics Research}{Troy, NY}
+			\begin{reslistsection}
+				\reslistentry Design and implement amino acid oligo classifier to predict small molecule binding propensity
+				\reslistentry Collaborate with outside researchers on code development for atom type project
+				\reslistentry Curate multiple datasets, perform descriptor calculations, and model generation
+				\reslistentry Webmaster for the Rensselaer Exploratory Center for Cheminformatics Research (RECCR)
+			\end{reslistsection}
+		\end{ressubsection}
 	} % End resume exclude
 
-
 \end{ressection}
-	
-	
+
+
 
 %
 % TEACHING EXPERIENCE
 %
-\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
+% Exclude this section if resume
+\ifthenelse{\boolean{resume}}{}{
+
 \begin{ressection}{Teaching Experience}
 	\begin{ressubsection}{January 2005 - May 2007}{Residence Hall Learning Assistant Coordinator}{Rensselaer Polytechnic Institute}{Advising and Learning Assistance Center}{Troy, NY}
 		\begin{reslistsection}
 			\reslistentry Coordinator of 9 Learning Assistants
-			\reslistentry Acted as an academic resource for 150 freshmen college students by holding workshops, office hours, and personally distributing newsletters 
+			\reslistentry Acted as an academic resource for 150 freshmen college students by holding workshops, office hours, and personally distributing newsletters
 			\reslistentry Gained crisis management and paraprofessional counseling skills while ensuring the safety and well-being of the students in the residence hall
 		\end{reslistsection}
 	\end{ressubsection}
@@ -311,6 +253,7 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 
 \end{ressection}
 } % End resume exclusion
+
 
 
 %
@@ -331,35 +274,45 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 
 
 
-%   
+%
 % PUBLICATIONS
-%   
+%
+% Exclude this section if resume
+\ifthenelse{\boolean{resume}}{}{
+
 \begin{ressection}{Publications}
 	\begin{reslistsection}
-		
+
 		\reslistentry \respubsection{den Bakker HC, Desjardins CA, Griggs AD, Peters JE, Zeng Q, et al}{ \href{http://www.plosone.org/article/info\%3Adoi\%2F10.1371\%2Fjournal.pone.0067511}{Evolutionary Dynamics of the Accessory Genome of \emph{Listeria monocytogenes}}}{PLoS One}{2013; 8(6): e67511. doi:10.1371/journal.pone.0067511}
-		
+
 		\reslistentry \respubsection{Anthony A. Fodor, Todd Z. DeSantis, Kristine M. Wylie, Jonathan H. Badger, Yuzhen Ye, Theresa Hepburn, Ping Hu, Erica Sodergren, Konstantinos Liolios, Heather Huot-Creasy, Bruce W. Birren, Ashlee M. Earl}{\href{http://www.plosone.org/article/info:doi/10.1371/journal.pone.0041294}{The ``Most Wanted" Taxa from the Human Microbiome for Whole Genome Sequencing}}{PLoS One}{2012; 7(7): e41294. doi: 10.1371/journal.pone.0041294}
-		
+
 		\reslistentry \respubsection{Jumpstart Consortium Human Microbiome Project Data Generation Working Group (2012)}{\href{http://www.plosone.org/article/info\%3Adoi\%2F10.1371\%2Fjournal.pone.0039315}{Evaluation of 16S rDNA-Based Community Profiling for Human Microbiome Research}}{PLoS ONE}{7(6): e39315. doi:10.1371/journal.pone.0039315}
-		
+
 		\reslistentry \respubsection{The Human Microbiome Project Consortium}{\href{http://www.nature.com/nature/journal/v486/n7402/full/nature11234.html}{Structure, function and diversity of the healthy human microbiome}}{Nature}{486, 207\textendash{}214 (14 June 2012) doi:10.1038/nature11234}
-		
+
 		\reslistentry \respubsection{The Human Microbiome Project Consortium}{\href{http://www.nature.com/nature/journal/v486/n7402/full/nature11209.html}{A framework for human microbiome research}}{Nature}{486, 215\textendash{}221 (14 June 2012) doi:10.1038/nature11209}
-		
+
 		\reslistentry \respubsection{Human Microbiome Jumpstart Reference Strains Consortium}{\href{http://www.sciencemag.org/content/328/5981/994.abstract}{A catalog of reference genomes from the human microbiome}}{Science}{2010 May 21;328(5981):994-9}
-		
+
 		\reslistentry \respubsection{Charles Bergeron, Theresa Hepburn, C. Matthew Sundling, Michael Krein, Bill Katt, Nagamani Sukumar, Curt M. Breneman, Kristin P. Bennett}{\href{http://arxiv.org/abs/1108.5397}{Prediction of peptide bonding affinity: kernel methods for nonlinear modeling}}{arXiv:1108.5397v1 [stat.ML]}{2011 August}
 	\end{reslistsection}
 \end{ressection}
 
+} % End resume exclusion
 
-%   
+
+
+
+
+%
 % POSTERS
-%   
-\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
+%
+% Exclude this section if resume
+\ifthenelse{\boolean{resume}}{}{
+
 \begin{ressection}{Contributed Posters}
-	\begin{reslistsection}		
+	\begin{reslistsection}
 		\reslistentry ``Efficient High Throughput Bacterial Assembly with Automated Plasmid Identification,'' (2009) Sequencing, Finishing and Analysis in the Future (FINTF), Santa Fe, New Mexico.
 		\reslistentry ``Efficient High Throughput Bacterial Assembly with Automated Plasmid Identification,'' (2009) Advances in Genome Biology and Technology (AGBT), Marco Island, Florida.
 		\reslistentry ``TAE Augmented scoring functions: Two approaches, atom and surface based.'' (2007) 234th ACS National Meeting, Boston, MA.
@@ -367,7 +320,10 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 		\reslistentry ``Bio- and chem-Informatics: Where do the twain meet?'' (2007) 234th ACS National Meeting, Boston, MA.
 	\end{reslistsection}
 \end{ressection}
+
 } % End resume exclusion
+
+
 
 
 
@@ -377,56 +333,58 @@ Experienced bioinformatician, proficient with open source and commercial bioinfo
 % VOLUNTEER ACTIVITIES
 %
 %
-%\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
-%\begin{ressection}{Leadership}
-%	\begin{reslistsection}
-%		\reslistentry 2007-2012: Association for Women in Science (AWIS) Active Member; MA
-%		\reslistentry 2007-2009: Ubuntu Local Community (LoCo) Team Member; MA
-%		\reslistentry 2006: Archer Center Leadership Conference Host; RPI
-%		\reslistentry 2005-2007: Women \textquotesingle s Mentor Program: Mentor; RPI
-%		\reslistentry 2005-2007: Society of Biological Sciences: Secretary/Webmaster; RPI
-%	\end{reslistsection}
-%\end{ressection}
-%}
-%
+% Exclude this section if resume
+\ifthenelse{\boolean{resume}}{}{
+\begin{ressection}{Leadership}
+	\begin{reslistsection}
+		\reslistentry 2007-2012: Association for Women in Science (AWIS) Active Member; MA
+		\reslistentry 2007-2009: Ubuntu Local Community (LoCo) Team Member; MA
+		\reslistentry 2006: Archer Center Leadership Conference Host; RPI
+		\reslistentry 2005-2007: Women\textquotesingle{}s Mentor Program: Mentor; RPI
+		\reslistentry 2005-2007: Society of Biological Sciences: Secretary/Webmaster; RPI
+	\end{reslistsection}
+\end{ressection}
+}
+
+
 %
 %  AWARDS AND HONORS
 %
-%\ifthenelse{\boolean{resume}}{}{ % Exclude this section if resume
-%\begin{ressection}{Awards and Honors}
-%	\begin{reslistsection}
-%		\reslistentry 2007: Beta Beta Beta Biological Honors Society
-%		\reslistentry 2003-2007: RPI Dean\rq{}s List
-%		\reslistentry 2003-2007: Rensselaer Medal
-%	\end{reslistsection}
-%\end{ressection}
-%}
+% Exclude this section if resume
+\ifthenelse{\boolean{resume}}{}{
+\begin{ressection}{Awards and Honors}
+	\begin{reslistsection}
+		\reslistentry 2007: Beta Beta Beta Biological Honors Society
+		\reslistentry 2003-2007: RPI Dean\rq{}s List
+		\reslistentry 2003-2007: Rensselaer Medal
+	\end{reslistsection}
+\end{ressection}
+}
 
 
 
 
-%   
+%
 % REFERENCES
-%   
-\ifthenelse{\boolean{references}}{ % Include this section only if references desired
+%
+% Include this section only if references desired
+\ifthenelse{\boolean{references}}{
+
 \pagebreak[4] % create new page for references (so can be provided separately)
-\begin{ressection}{references}
+\begin{ressection}{References}
 	\begin{resrefsection}
 %% Ask Bela, Arne, Ashlee Earl
 		\resrefentry{Chad Nusbaum}{Co-Director, Sequence \& Analysis Program, The Broad Institute}{chad@broadinstitute.org}{617.714.7880}
 		\resrefentry{Michael Feldgarden}{Research Scientist I, The Broad Institute}{feldgard@broadinstitute.org}{617.714.7921}
 		\resrefentry{Sarah Young}{Bioinformatics Supervisor, The Broad Institute}{stowey@broadinstitute.org}{617.714.8508}
 		\resrefentry{Curt Breneman}{Professor, RPI Chemistry Department}{brenec@rpi.edu}{518.276.2781}
-%		\resrefentry{Matthew Sundling}{Former Graduate Student Mentor. Owner, Sundling Consulting}{matthew.sundling@gmail.com}{518.598.6544}
-%		\resrefentry{Christopher Bystroff}{Professor, RPI Biology Department}{bystrc@rpi.edu}{518.276.3185}
-%		\resrefentry{Nan Williams}{Learning Skills Specialist, RPI Advising and Learning Assistance Center}{willin2@rpi.edu}{518.276.6269}
-	\end{resrefsection} 
-\end{ressection} 
-}{} % End resume exclusion
+		\resrefentry{Matthew Sundling}{Former Graduate Student Mentor. Owner, Sundling Consulting}{matthew.sundling@gmail.com}{518.598.6544}
+		\resrefentry{Christopher Bystroff}{Professor, RPI Biology Department}{bystrc@rpi.edu}{518.276.3185}
+		\resrefentry{Nan Williams}{Learning Skills Specialist, RPI Advising and Learning Assistance Center}{willin2@rpi.edu}{518.276.6269}
+	\end{resrefsection}
+\end{ressection}
 
-
-
-
+}{} % End references exclusion
 
 
 

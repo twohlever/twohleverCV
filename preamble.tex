@@ -1,0 +1,110 @@
+
+\usepackage{marvosym}
+\usepackage{multirow}
+
+\usepackage{fancyhdr}
+\usepackage{soul} % headers & footers
+\usepackage{marvosym} % icons for letter and telephone in footer
+
+\usepackage{graphicx}
+\graphicspath{
+    {../../img/}
+    {../img/}
+    {img/}
+}
+
+
+
+
+%
+% Set Font
+%
+\usepackage{baskervald}
+\usepackage[T1]{fontenc}
+\renewcommand\bf{\bfseries} %% https://tex.stackexchange.com/questions/385462/is-there-a-way-to-permanently-set-bf-to-textbf-in-bbl
+
+
+%
+% Set FORMATTING
+%
+\usepackage[    % Simple settings for margins
+	top    = 1.0in,
+	bottom = 1.0in,
+	left   = 1.0in,
+	right  = 1.0in]{geometry}
+\setlength{\parindent}{0pt}% Remove paragraph indent
+
+
+\usepackage{hyperref} %\  href{<my_url>}{<description>}
+\hypersetup{
+	hidelinks,
+	breaklinks=true,
+}
+
+
+
+
+\newcommand{\hseparate}[0]{{\hspace{.7mm}\textbar\textbar\hspace{.7mm}}}
+
+
+
+%
+% DEFINE FOOTER
+%
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{
+    \small
+    {\Letter\hspace{0.7 mm}\email}
+	\hspace{.5 mm} \textbar\textbar \hspace{.5mm}
+	{\Telefon\hspace{0.7 mm}\phoneC}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  META DATA CONTENT
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%
+% RESUME OR CV || Cover Letter || References
+%
+\usepackage{ifthen} % usage:  \ifthenelse{\boolean{resume}}{True thing}{False thing}
+
+\newboolean{resume}
+\newboolean{references}
+\newboolean{coverletter}
+
+\setboolean{resume}{True}
+\setboolean{references}{False}
+\setboolean{coverletter}{True}
+
+
+
+
+%
+% DEFINE PERSONAL INFORMATION
+%
+\newcommand{\authorname}[1]{\renewcommand{\authorname}{#1}}
+\newcommand{\authorFname}[1]{\renewcommand{\authorFname}{#1}}
+\newcommand{\email}[1]{\renewcommand{\email}{#1}}
+\newcommand{\streetaddress}[1]{\renewcommand{\streetaddress}{#1}}
+\newcommand{\citystatezip}[1]{\renewcommand{\citystatezip}{#1}}
+\newcommand{\phoneC}[1]{\renewcommand{\phoneC}{#1}}
+%\newcommand{\webpage}[1]{\renewcommand{\webpage}{#1}}
+
+\authorname{Theresa Wohlever}
+\authorFname{Hepburn}
+\streetaddress{5006 Valencia Drive}
+\citystatezip{Toledo, OH 43623}
+\phoneC{+1.860.490.3525}
+\email{theresa.wohlever@gmail.com}
