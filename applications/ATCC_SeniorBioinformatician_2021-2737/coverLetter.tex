@@ -1,0 +1,118 @@
+\documentclass[10pt,letterpaper]{article}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\input{../../preamble}
+
+
+%
+% Format for Letter
+%
+\geometry{
+	top    = 1.0in,
+	bottom = 1.0in,
+	left   = 1.0in,
+	right  = 1.0in
+}
+\setlength{\parindent}{0pt}% Remove paragraph indent
+\setlength{\parskip}{1.5em}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+%
+% DEFINE RECEPIENT PERSONAL INFORMATION
+%
+
+\newcommand{\titleto}[1]{\renewcommand{\titleto}{#1}}
+\newcommand{\nameto}[1]{\renewcommand{\nameto}{#1}}
+\newcommand{\addrto}[1]{\renewcommand{\addrto}{#1}}
+
+\titleto{}
+\nameto{Jonathan Jacobs} % Addressee of the letter above the to address
+\addrto{
+\\
+ATCC\\
+4217 Perry Pkwy Ste 5  \\
+Gaithersburg, MD 20877 \\
+}
+
+
+%
+% DEFINE HEADER
+%
+
+\rhead{
+ 		\authorname 	\\
+ 		\streetaddress  \\
+ 		\citystatezip
+}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  BEGIN DOCUMENT
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagenumbering{gobble} %% No page numbers
+%----------------------------------------------------------------------------------------
+%	DATE
+%----------------------------------------------------------------------------------------
+
+\begin{flushright}
+
+    \today
+\end{flushright}
+
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+\nameto
+\addrto
+
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+Dear \titleto \hspace{0.3 mm} \nameto,
+
+
+I joyfully began my career at the Broad Institute on the Human Microbiome Project weeks after graduating with my Bachelor’s degree in bioinformatics. I adored the culture. Everyone I encountered exuded excitement for discovery throughout their challenging pursuit of biological truth; every project promised meaningful impact. This was the mission that inspired me during the challenging times of Rensselaer Polytechnic Institute; I was living my dream! Unfortunately, that dream ran into a wall of student loan debt. I was exhausted from needing to work two jobs, so I left the workplace my dreams were made of for a 30\% salary increase and for-profit pressure. With a significantly improved financial situation, I'm hopeful I can return to the non-profit sector I continue to consider home.
+
+
+The skills I've acquired through my employment history make me an extraordinary fit for the Senior Bioinformatician role you've advertised. As an assembly analyst supporting the Human Microbiome Consortium I was primarily responsible for emph{de novo} assembling draft bacterial genomes. Due to read length constraints with Illumina (then Solexa) we depended on 454 for this work. Not only had a developed Perl libraries for my team to parse Newbler output files, I spearheaded pipelining essential components from LIMS exported data to automated checking for sample swaps, isolate contamination, sequencer specific issues, etc. After nearly five years at The Broad I moved on to the CLC bio Application Support team where I successfully guided customers in answering biological questions addressed with contemporary sequencing technologies (Next-Gen Sequencing). These included genomic resequencing analysis, transcriptomics, whole genome finishing and de novo sequencing. While I enjoyed the breadth of challenges, I transitioned to the Custom Solutions team in 2016 where I was able to focus on both agricultural and clinical applications. I attribute my technical competence as a key component to my success in this role while I've become an adept and experienced project manager and mentor. I've sustained QIAGEN's relationship with multiple clients generating millions of USD in revenue. Most notably I've fostered a symbiotic relationship with the Vice President of bioinformatics for a company with more than 20 billion USD market capitalization. The many hurdles I've overcome in partnership with this client have lead me to refocus my career. I value scientific discovery over profit; now that for-profit requirements have lessened in my personal life, I'd like my career path to reflect the non-profit nature of my dream job.
+
+
+I am interested in your Senior Bioinformatician role to broaden my experience with bioinformatic tools as a byproduct of propelling propel life science research into the future. I recognize my experience may be more extensive that you would anticipate given this position's requirements; that is entirely intentional. The high stress nature of my current role conflicts with my home-life priorities and the company culture I'm seeking. I desire a position that continues to leverage my strengths, satisfies my passion for supporting therapeutic improvements through rigorous scientific discovery, yet allows me to participate in my children’s lives more fully.
+
+Thank you for your consideration of my application; I hope to experience the joy of hearing from you.
+
+
+
+%----------------------------------------------------------------------------------------
+
+
+\hspace*{.6\linewidth} Best wishes, \\
+\hspace*{.57\linewidth} \includegraphics[width=0.30\linewidth]{TheresaWohleverSignature.png}  {\vspace{-9pt}} \\
+\hspace*{.6\linewidth}  Theresa Wohlever
+
+\end{document}

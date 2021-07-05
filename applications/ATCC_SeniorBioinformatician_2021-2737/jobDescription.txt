@@ -1,0 +1,42 @@
+## https://careers-atcc.icims.com/jobs/2737/senior-bioinformatician/job?mobile=false&width=1677&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240
+
+
+Senior Bioinformatician
+Job LocationsUS-MD-Gaithersburg
+Job ID 2021-2737 Department Sequencing and BioInformatics Center Posted Date 4/23/2021
+
+Overview
+The ATCC Digital Biology Group is seeking a Senior Bioinformatician to join their team of genomics laboratory scientists and bioinformaticians who are building the ATCC Genome Portal. The successful candidate will serve as a project lead for multiple projects that may include ATCC’s new laboratory information management system (LIMS), an integrated data lake and structure data warehouse, building predictive analytical pipelines for systems biology applications, integrating multi-omics datastreams together to help accelerate new and ongoing R&D projects, or biocuration initiatives focused on digitizing and leveraging historical ATCC laboratory data for new discovery opportunities. Responsibilities include contributing to the implementation and analysis of next generation sequencing (NGS) data sets, developing machine learning or AI approaches to integrate textual, multi-omic, and unstructured data, and working with high throughput image analysis approaches to optimize large scale bioproduction and biological manufacturing. The Senior Bioinformatician will design, develop, and maintain databases, code repositories and, utilizing various tools to process, analyze and interpret high volumes of biological data. They are considered highly skilled and proficient in discipline and advise others on elevated issues. The Senior Bioinformatican will serve as a project leader for new projects, an internal subject matter expert and contributor to ongoing data science and bioinformatics projects, and an external SME to represent ATCC in engagements with the broader bioinformatics and data science industry and research community.
+
+ 
+
+The Senior Bioinformatician works on problems of diverse scope where analysis of situations or data requires evaluation of identifiable factors. They evaluate, interpret, and present on data in oral and written forms. They consult with laboratory personnel and others to analyze data sets and work to continuously improve data processes.
+
+
+
+Responsibilities
+Write and run custom bioinformatics scripts using existing published tools and occasionally tools developed for purpose, summarize the results in a digestible manner and deliver the information using established reporting procedures.
+Design and maintain databases to curate data. Develop sequence databases and searches. Prepare data structure and determine effective data analysis frameworks.
+Use informatics tools to process, analyze, and interpret high volumes of genomic data (e.g., RNAseq, Next-Generation Sequencing (NGS), proteomic, transcriptomic).
+Support junior staff with writing, maintaining, and improving production scripts which automate processes and analyses related to NGS.
+Support the maintenance of computational infrastructure and the flow of samples and information for large-scale studies.
+Develop departmental code style guidelines and help to manage regularly scheduled code reviews to ensure code quality.
+Demonstrate good judgment in selecting methods and techniques for obtaining solutions while resolving a wide range of issues in creative ways.
+Qualifications
+Education and Experience:
+
+Bachelor's degree and 5 or more years' experience or equivalent experience.
+A Master’s degree plus 1-3 years’ experience in Bioinformatics, Computer Science, Statistics, Genomic Sciences, Molecular Biology, or Genetics OR Ph D with 0+ years’ experience.
+
+Knowledge, Skills and Abilities:
+
+Demonstrated expertise using command line to interact with Windows and Linux operating systems, including but not limited to Command Prompt, Powershell, Bash, or Zsh.
+Demonstrated experience with scripting languages, including but not limited to: Python, R, Perl, Ruby, Java.
+Experience in bioinformatics data analysis, data mining and processing sequencing data sets.
+Coursework or practical experience with relational database design and implementation; familiarity with SQL.
+Coursework or practical experience with Git version control, familiarity with Github or Azure DevOps.
+Other Duties:
+
+Perform other duties as assigned.
+
+
