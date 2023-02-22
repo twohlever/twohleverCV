@@ -1,0 +1,113 @@
+\documentclass[10pt,letterpaper]{article}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\input{../../preamble}
+
+
+%
+% Format for Letter
+%
+\geometry{
+	top    = 1.0in,
+	bottom = 0.75in,
+	left   = 1.0in,
+	right  = 1.0in
+}
+\setlength{\parindent}{0pt}% Remove paragraph indent
+\setlength{\parskip}{1.5em}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%
+% DEFINE RECEPIENT PERSONAL INFORMATION
+%
+
+\newcommand{\titleto}[1]{\renewcommand{\titleto}{#1}}
+\newcommand{\nameto}[1]{\renewcommand{\nameto}{#1}}
+\newcommand{\addrto}[1]{\renewcommand{\addrto}{#1}}
+
+\titleto{}
+\nameto{Mikayla Simons} % Addressee of the letter above the to address
+\addrto{
+\\
+Labcorp Global Talent Management \\
+3301 Kinsman Blvd. \\
+Madison, WI 53704 \\
+}
+
+
+%
+% DEFINE HEADER
+%
+\rhead{
+ 		\authorname 	\\
+ 		\streetaddress  \\
+ 		\citystatezip
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  BEGIN DOCUMENT
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagenumbering{gobble} %% No page numbers
+%----------------------------------------------------------------------------------------
+%	DATE
+%----------------------------------------------------------------------------------------
+
+\begin{flushright}
+
+    \today
+\end{flushright}
+
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+\nameto
+\addrto
+
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+Dear \titleto \hspace{0.2 mm} \nameto,
+
+
+%% https://docs.google.com/document/d/1hZXeNP9ARbAN1YRiYd2trykAnLGcZDlM_xj8nfZKOac/edit?usp=sharing
+
+% As a motivated and passionate leader with extensive experience managing a culturally and geographically diverse team, 
+
+I am a seasoned remote Bioinformatics Manager with demonstrated success leading cross-functional software development projects for both clinical and non-clinical application. I have a track record of consistent delivery in a fast-paced, rapidly changing environment. Given my experience and desire to grow in a leadership capacity I am an excellent candidate for Labcorp's Drug Development Track Leadership Development Rotational Program.
+
+I embarked on my post-bachelor career at The Broad Institute of MIT and Harvard surrounded by the world's leading scientists. I treasured the degree-free education I received through analyzing bleeding edge NGS sequencing technologies and proposing methods for improved analysis of 16S microbial communities. The weight of student loan debt drew me to a more lucrative position in industry and acceptance that pursuit of a PhD in computational biology was not in my foreseeable future for fiscal reasons.
+
+ I became a fully remote employee in 2013 when I moved away from Boston, MA for family while continuing my role at CLC bio, a QIAGEN company. My manager made clear I was an essential asset, ensuring I was fully supported in transitioning. Through my tenure working-from-home, leadership asked if I would manage my team through periods of instability. I graciously accepted each instance with the understanding that remote management was interim and never permanent. I enjoyed lifting up my [interim] reports to become their best selves resulting in high quality outcomes from California to Denmark to Romania. Fostering excellence among the personalities reporting to me by solid and dotted lines brought me great joy. Aligning Key Account Manager expectations with Development and Product team realities was challenging; I learned to trust the expertise of my colleagues making account level decisions without in depth grasp of detail. Casting my ego aside to recruit and hire my replacement was humbling; I knew at the start of my latest interim leadership appointment that the scope of my role would again shrink back to an individual contributor as project manager. I was unable to reconcile this loss with my core values, so I chose to leave QIAGEN in July 2021 to pursue an authentic growth opportunity. 
+
+%%  Through my management experience, I\rq{}ve learned I enjoy the thrill of successfully negotiating interpersonal conflict more than the thrill of finding a bug in my code. The art of translating clinician needs into feasible requirements and defined deliverables brings me more joy than overcoming technical hurdles. I find bringing together diverse individuals to overcome the impossible through their complementary strengths more rewarding than my accomplishments as an individual. 
+
+There are world class scientists who prefer individual deep work over leading a team. They may fear the challenges associated with navigating complex interpersonal relationships, but I embrace this challenge. Experience taught me excellence does not come through fear, but by ego-less pursuit of a clear vision. I\rq{}m not afraid of rooms where I am the least intelligent; I\rq{}m afraid of silencing voices with the most informed insight. I\rq{}m not afraid of shifting priorities; I\rq{}m afraid of failing to follow practices that enable effective response. I\rq{}m not afraid of hard choices; I\rq{}m afraid of paralyzing indecision. I\rq{}m not afraid of failure; I\rq{}m afraid of repeating the same mistakes and falling into complacent mediocrity.
+
+Given my experience, demonstrated success, and passion for quality healthcare I have confidence I will become a leader who “consistently exceeds expectations” within Labcorp\rq{}s Drug Development Track Leadership Development Rotational Program.. Thank you for considering my application.
+
+%----------------------------------------------------------------------------------------
+
+\hspace*{.6\linewidth} Best wishes, \\
+\hspace*{.57\linewidth} \includegraphics[width=0.30\linewidth]{TheresaWohleverSignature.png}  {\vspace{-9pt}} \\
+\hspace*{.6\linewidth}  Theresa Wohlever
+
+\end{document}

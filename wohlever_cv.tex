@@ -37,12 +37,12 @@
 
 % \begin{ressubsection}
 %	#1: {May 2016 - Jan. 2021}
-% #2: {Senior Bioinformatician}
+%   #2: {Senior Bioinformatician}
 %	#3: {QIAGEN Bioinformatics}
 %	#4: {Custom Solutions}
 %	#5: {Chicago, IL}
 \newenvironment{ressubsection}[5]{
-	\noindent {\bf #3}  #5 \vspace{-2pt} \\
+	\noindent {\bf #3},  #4 \vspace{-2pt} \\
 	{\emph{#2}}, #1 \vspace{-7pt}
 }
 
@@ -61,7 +61,7 @@
 
 %% Define Publications Section
 % 1: Authors; 2: Title; 3: Journal; 4: Date/Issue
-\newenvironment{respubsection}[4]{ \raggedright\noindent {#1}. {\emph{#2}}. {\bf{#3}}. {#4}. }{}
+\newenvironment{respubsection}[4]{ \raggedright\noindent {#1}. {\emph{#2}}. {\bf{#3}}. {#4}.}{}
 
 
 %% Define References section
@@ -85,27 +85,23 @@
 
 \begin{document}
 \pagenumbering{gobble} %% No page numbers in my CV
-
 \header
 
 %
 % OBJECTIVE / SUMMARY
 %
-	Experienced manager and mentor of bioinformaticians proficient with open source and commercial bioinformatics resources. Effective troubleshooter with excellent communication and organizational skills who brings together these attributes to provide consistent, high level, quality bioinformatics support and services to researchers and clinicians of varied backgrounds.
-	\emph{Seeking opportunities in the life sciences that furthers the mission of improved patient care} while emphasizing team focused values and collaboration.
+Experienced remote Bioinformatics IT Manager with a passion for cultivating talent and improving process. Demonstrated success translating high profile client needs to clear software development requirements. {\bf Seeking opportunities to grow in a Director} level role while furthering the mission of improved patient care through emphasizing team focused values, AGILE philosophy, and a growth mindset.
 \medspace
 
 %
 % SKILLS
-%
-
 % Exclude this section if resume
 \ifthenelse{\boolean{resume}}{}{
 	\begin{ressection}{Specialized Experience} I demonstrate familiarity with the following resources listed left to right from greatest proficiency to least
 		\begin{reslistsection}
 			\reslistentry \emph{NGS Data}: Illumina, Pacific Biosciences, 454, Ion Torrent, Oxford Nanopore, SOLiD, Complete Genomics
 			\reslistentry \emph{Genomic Software}: CLC Genomics/Biomedical Workbench, CLC Assembly Cell, CLC Servers, IGV, BLAST, Newbler, bwa, ARACHNE, Velvet, maq, RDP, JalView, mothur, usearch/otupipe, AbundantOTU,  nucmer
-			\reslistentry \emph{Programming}: bash/tcsh, Perl, R, \LaTeX{}, git, svn, Eclipse IDE, SQL %% , Java  % , C/C++, SQL % gcc, git, svn
+			\reslistentry \emph{Programming}: bash/tcsh, Perl, R, \LaTeX{}, git, svn, Visual Studio Code, Eclipse IDE, SQL %% , Java  % , C/C++, SQL % gcc, git, svn
 			\reslistentry \emph{Internal Systems}: MS Teams, JIRA, Confluence, Jenkins, SalesForce %%  SalesForce ServiceCloud, HelpSpot
 		\end{reslistsection}
 	\end{ressection}
@@ -115,43 +111,56 @@
 %
 % RESEARCH & WORK EXPERIENCE
 %
-\begin{ressection}{Research \& Work History}
+
+
+\ifthenelse{\boolean{resume}}{\begin{ressection}{}}{
+	%% Don't need the "Research & Work History heading on a 1 page resume
+	\begin{ressection}{Research \& Work History}
+}
+
+	%% \includegraphics[width=1\linewidth]{img/labcorp.png}}}
+	\begin{ressubsection}{November 2021 - Present}{Bioinformatics IT Manager}{Labcorp Diagnostics}{Data Science, AI, Clinical Bioinformatics}{Toledo, OH}
+		\begin{reslistsection}
+			\reslistentry Identify and implement process improvement aligned with industry best practices within bioinformatic scope of clinical assay development, deployment, and production support
+			\reslistentry Enable AGILE adoption with 12 person team of biologists, bioinformaticians, and software engineers
+		\end{reslistsection}
+	\end{ressubsection}
+
+
 %% \includegraphics[width=1\linewidth]{img/Qiagen.jpg}}}
-	\begin{ressubsection}{Jan. 2021 - Aug. 2021}{Custom Services Manager}{QIAGEN Digital Insights (QDI)}{Custom Solutions and Services}{Toledo, OH}
+	\begin{ressubsection}{January 2021 - August 2021}{Interim Custom Services Manager}{QIAGEN Digital Insights (QDI)}{Custom Solutions and Services}{Toledo, OH}
 		\begin{reslistsection}
 			\reslistentry Lead transcontinental team of 4 bioinformaticians and 4 software engineers
-			\reslistentry Set customer expectations regarding deliverables and timelines for custom service projects
-			\reslistentry Obtain, allocate, and prioritize resources to meet customer expectations
-			\reslistentry Sustain multimillion USD client partnerships via "White Glove" level of care
+			\reslistentry Sustain multimillion USD client partnerships via \lq{}White Glove\rq{} level of care
+			\reslistentry Obtain, allocate, and prioritize resources to delight customers and retain talent
+			\reslistentry Align with Account Management on feasibility and forecast for projects with 2 weeks LOE to >2 years 
+			\reslistentry Recruit permanent Director and entry level Bioinformatician FTE
 		\end{reslistsection}
 	\end{ressubsection}
 
 
-
-	\begin{ressubsection}{May 2016 - Jan. 2021}{Senior Bioinformatician}{QIAGEN Bioinformatics}{Custom Solutions}{Chicago, IL}
+	\begin{ressubsection}{May 2016 - January 2021}{Senior Bioinformatician}{QIAGEN Bioinformatics}{Custom Solutions}{Chicago, IL}
 		\begin{reslistsection}
-			\reslistentry Manage software releases for over 25 custom projects
-			\reslistentry Manage multi-year projects for many high value clients
+			\reslistentry Manage multi-year projects for U.S. based high value clients
 			\reslistentry Define requirements, scope, and Statement of Work (SOW) for custom bioinformatic solutions and services
-			\reslistentry Communicate with clients and developers to define and implement project requirements
-			\reslistentry Test, release, and support client use of custom bioinformatic software
+			\reslistentry Communicate with clients, Key Account Managers, and developers to define and complete project goals
+			\reslistentry Manage testing, release, and support client use of custom bioinformatic software for over 25 custom projects
 		\end{reslistsection}
 	\end{ressubsection}
 
 
-	\begin{ressubsection}{Oct. 2014 - Apr. 2016}{Senior Scientist}{QIAGEN Bioinformatics}{Advanced Genomics Applications}{Chicago, IL}
+	\begin{ressubsection}{October 2014 - April 2016}{Senior Scientist}{CLC bio, a QIAGEN Company}{Advanced Genomics Applications}{Chicago, IL}
 		\begin{reslistsection}
 			\reslistentry Analyze, define, and resolve complex scientific and technical issues from scientist and clinician users
 			\reslistentry Enable users to successfully harness CLC and Ingenuity product lines to fulfill analysis objectives
-			\reslistentry Modify and establish procedures to promptly and comprehensively meet customer needs
-			\reslistentry Partner with global R\&D, product management, sales, and marketing teams to improve processes
-			\reslistentry Establish and revise systems and protocols the team uses for customer engagement
+			\reslistentry Partner with R\&D, Product Management, sales, and marketing for process improvement
+			\reslistentry Establish and revise systems and protocols for customer engagement (SalesForce)
 			\reslistentry Contribute to internal documentation for consistent quality support across the globally integrated team
 		\end{reslistsection}
 	\end{ressubsection}
 
 
-	\begin{ressubsection}{Jan. 2012 - Oct. 2014}{Application Scientist}{CLC bio}{Customer Support}{Cambridge, MA}
+	\begin{ressubsection}{January 2012 - October 2014}{Application Scientist}{CLC bio}{Customer Support}{Cambridge, MA}
 		\begin{reslistsection}
 			\reslistentry Interpret, replicate, and propose solutions for a broad range of customer questions and problems
 
@@ -167,11 +176,11 @@
 
 			\reslistentry Effectively and clearly communicate software issues with support team, developers, and customers
 			\reslistentry Collaborate on research, drafting, and editing of customer facing text eg. Frequently Asked Questions
-			\reslistentry Mentor support colleagues through support system transitions
+			\reslistentry Mentor and train junior support colleagues 
 		\end{reslistsection}
 	\end{ressubsection}
 
-	\begin{ressubsection}{Jan. 2010 - Jan. 2012}{Associate Computational Biologist}{The Broad Institute of MIT and Harvard}{Microbial Systems and Communities}{Cambridge, MA}
+	\begin{ressubsection}{January 2010 - January 2012}{Associate Computational Biologist}{The Broad Institute of MIT and Harvard}{Microbial Systems and Communities}{Cambridge, MA}
 		\begin{reslistsection}
 			\reslistentry Develop and maintain 454 16S filtering and classification pipeline [Perl, \LaTeX{}, R, mothur]
 			\reslistentry Process 16 ongoing projects consisting of in-house and external data
@@ -186,7 +195,7 @@
 		\end{reslistsection}
 	\end{ressubsection}
 
-	\begin{ressubsection}{July 2007 - Jan. 2010}{Bioinformatics Assembly Analyst}{The Broad Institute of MIT and Harvard}{Assembly Computation and Development Core}{Cambridge, MA}
+	\begin{ressubsection}{July 2007 - January 2010}{Bioinformatics Assembly Analyst}{The Broad Institute of MIT and Harvard}{Assembly Computation and Development Core}{Cambridge, MA}
 		\begin{reslistsection}
 			\reslistentry Propose, develop, and maintain 454 analysis pipeline reducing error and analyst time by 90\%
 
@@ -210,7 +219,7 @@
 				\reslistentry Mentor three junior analysts to successfully accomplish similar responsibilities
 			} % End resume exclude
 
-			\reslistentry Preliminary analysis of new sequencing technologies for assembly: Illuminia (Solexa), Pacific Biosciences
+			\reslistentry Assess new sequencing technologies for de novo assembly: Illuminia (Solexa), Pacific Biosciences
 		\end{reslistsection}
 	\end{ressubsection}
 
@@ -261,13 +270,27 @@
 %
 
 \begin{ressection}{Education}
-	\begin{ressubsection}{August 2003 - May 2007}{Bachelor of Science}{Rensselaer Polytechnic Institute}{}{Troy, NY}
+
+	\begin{ressubsection}{August 2003 - May 2007}{Bachelor of Science}{Rensselaer Polytechnic Institute}{Bioinformatics and Molecular Biology}{Troy, NY}
 		\begin{reslistsection}
 			\reslistentry 	\textit{cum laude} 3.56/4.0
-			\reslistentry Bioinformatics and Molecular Biology Major 3.29/4.0
-			\reslistentry Computer Science Minor 3.70/4.0
+			% Exclude this section if resume
+			\ifthenelse{\boolean{resume}}{}{
+				\reslistentry Bioinformatics and Molecular Biology Major 3.29/4.0
+				\reslistentry Computer Science Minor 3.70/4.0
+			} % End resume exclusion
 		\end{reslistsection}
 	\end{ressubsection}
+
+
+	\begin{ressubsection}{October 2022}{CSPO}{Scrum Alliance}{Concepts and Beyond}{}
+		\begin{reslistsection}
+			\reslistentry 	Certified Scrum Product Owner (CSPO)
+			\reslistentry 	Certificant ID: 001426943 Certification Active through: 06 October 2024 %% Trainer Anil Jaising at Concepts & Beyond
+		\end{reslistsection}
+	\end{ressubsection}
+
+
 \end{ressection}
 
 
@@ -337,6 +360,7 @@
 \ifthenelse{\boolean{resume}}{}{
 \begin{ressection}{Leadership}
 	\begin{reslistsection}
+		\reslistentry 2019 - Present: Lucase County Child Services Foster Parent
 		\reslistentry 2007-2012: Association for Women in Science (AWIS) Active Member; MA
 		\reslistentry 2007-2009: Ubuntu Local Community (LoCo) Team Member; MA
 		\reslistentry 2006: Archer Center Leadership Conference Host; RPI
@@ -374,13 +398,16 @@
 \begin{ressection}{References}
 	\begin{resrefsection}
 %% Ask Bela, Arne, Ashlee Earl
-		\resrefentry{Chad Nusbaum}{Co-Director, Sequence \& Analysis Program, The Broad Institute}{chad@broadinstitute.org}{617.714.7880}
-		\resrefentry{Michael Feldgarden}{Research Scientist I, The Broad Institute}{feldgard@broadinstitute.org}{617.714.7921}
-		\resrefentry{Sarah Young}{Bioinformatics Supervisor, The Broad Institute}{stowey@broadinstitute.org}{617.714.8508}
-		\resrefentry{Curt Breneman}{Professor, RPI Chemistry Department}{brenec@rpi.edu}{518.276.2781}
-		\resrefentry{Matthew Sundling}{Former Graduate Student Mentor. Owner, Sundling Consulting}{matthew.sundling@gmail.com}{518.598.6544}
-		\resrefentry{Christopher Bystroff}{Professor, RPI Biology Department}{bystrc@rpi.edu}{518.276.3185}
-		\resrefentry{Nan Williams}{Learning Skills Specialist, RPI Advising and Learning Assistance Center}{willin2@rpi.edu}{518.276.6269}
+		\resrefentry{Uwe Appelt}{Director of Discovery Bioinformatics, QIAGEN Digital Insights}{Uwe.Appelt@qiagen.com}{}
+		\resrefentry{Arne Materna}{CEO, Ares Genetics}{arne.materna@ares-genetics.com}{+43 13 61 88 80 10}
+		\resrefentry{Jonathan Jacobs}{Senior Director of Bioinformatics, ATCC}{jjacobs@atcc.org}{703.365.2700x2873}
+		% \resrefentry{Chad Nusbaum}{Co-Director, Sequence \& Analysis Program, The Broad Institute}{chad@broadinstitute.org}{617.714.7880}
+		% \resrefentry{Michael Feldgarden}{Research Scientist I, The Broad Institute}{feldgard@broadinstitute.org}{617.714.7921}
+		% \resrefentry{Sarah Young}{Bioinformatics Supervisor, The Broad Institute}{stowey@broadinstitute.org}{617.714.8508}
+		% \resrefentry{Curt Breneman}{Professor, RPI Chemistry Department}{brenec@rpi.edu}{518.276.2781}
+		% \resrefentry{Matthew Sundling}{Former Graduate Student Mentor. Owner, Sundling Consulting}{matthew.sundling@gmail.com}{518.598.6544}
+		% \resrefentry{Christopher Bystroff}{Professor, RPI Biology Department}{bystrc@rpi.edu}{518.276.3185}
+		% \resrefentry{Nan Williams}{Learning Skills Specialist, RPI Advising and Learning Assistance Center}{willin2@rpi.edu}{518.276.6269}
 	\end{resrefsection}
 \end{ressection}
 
