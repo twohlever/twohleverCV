@@ -1,14 +1,6 @@
 
-applications/QIAGENGISSBioinformaticsScientist/coverLetter.log
-
-applications/QIAGENGISSBioinformaticsScientist/coverLetter.synctex.gz
-
-applications/QIAGENGISSBioinformaticsScientist/coverLetter.aux
-
-wohlever_cv.out
-
-wohlever_cv.aux
-
-wohlever_cv.log
-
-wohlever_cv.synctex.gz
+*.log
+*.synctex.gz
+*.aux
+*.out
+*.aux
