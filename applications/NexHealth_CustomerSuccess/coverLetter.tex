@@ -1,0 +1,110 @@
+\documentclass[10pt,letterpaper]{article}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\input{../../preamble}
+
+
+%
+% Format for Letter
+%
+\geometry{
+	top    = 1.0in,
+	bottom = 1.0in,
+	left   = 1.0in,
+	right  = 1.0in
+}
+\setlength{\parindent}{0pt}% Remove paragraph indent
+\setlength{\parskip}{1.5em}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%
+% DEFINE RECEPIENT PERSONAL INFORMATION
+%
+
+\newcommand{\titleto}[1]{\renewcommand{\titleto}{#1}}
+\newcommand{\nameto}[1]{\renewcommand{\nameto}{#1}}
+\newcommand{\addrto}[1]{\renewcommand{\addrto}{#1}}
+
+\titleto{People Operations at}
+\nameto{NexHealth} % Addressee of the letter above the to address
+\addrto{
+\\
+33 Bush St Ste 2000\\
+San Francisco, California, 94104 \\
+}
+
+
+%
+% DEFINE HEADER
+%
+\rhead{
+ 		\authorname 	\\
+ 		\streetaddress  \\
+ 		\citystatezip
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  BEGIN DOCUMENT
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagenumbering{gobble} %% No page numbers
+%----------------------------------------------------------------------------------------
+%	DATE
+%----------------------------------------------------------------------------------------
+
+\begin{flushright}
+    \today
+\end{flushright}
+
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+\nameto
+\addrto
+
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+%% Supplemental information included in teh webform:
+%% “"We adopted our three children out of foster care at the ages of 4, 6, and 6 years old. Their parents did not have the mental health required to consistently care for them. While our children now have a stable environment, their genetics place them at a great disadvantage. Through working with their pediatric psychiatrist, I know the struggle of finding the medication that best meets their needs. My parental experience inspired laser beam focus on my career goal to make meaningful impact in healthcare, especially within the pharmacogenomic space in pursuit of diagnostics and therapeutics for polygenic psychiatric disorders. I want to support this research relentlessly - making the impossible, possible. I want my children to be the last generation who suffers in this way and I want to leverage every skill and ability I possess to further that mission. The etymology of the word “passion” stems from physical suffering -- my passion for accelerating healthcare advancements stretches beyond warm fuzzies for helping others, it stems from suffering with my children. No passion is greater than a mother’s love for her children - this is the passion I will bring to DNAnexus clients."
+%%
+
+Dear \titleto \hspace{0.2 mm} \nameto,
+
+\begin{flushleft}
+	I am a seasoned remote Bioinformatics Manager with demonstrated success leading cross-functional software development projects for both clinical and non-clinical applications. I have a track record of forging long term client relationships while demonstrating consistent and quality delivery in a fast-paced, rapidly changing environment. Given my experience and desire for growth, I am hopeful for the opportunity to make impactful contributions to the NexHealth Customer Success team.
+
+	In QIAGEN's Custom Solutions and Services team I focused on high value client relationships. Walking lock-step with end users on their customer journey I learned to solve the customer's problem by ensuring I fully grasped their perspective and drove solutions to completion. Our team's success stemmed from an empathetic ear, effective prioritization, and commitment to iterative improvement. I sustained QIAGEN's relationship with multiple clients generating millions of USD in revenue. Notably, I fostered such a strong relationship with the Labcorp\rq{}s Vice President of \lq{}Data Science, Artificial Intelligence, and Bioinformatics\rq{} that I was actively recruited for my current role. 
+	 
+	In 2018 my spouse and I became licensed foster parents. Since that time I've invested significant effort advocating for Medicaid dependent children in my care. Vulnerable people in greatest need struggle to access care due to dramatic inefficiencies in existing systems. NexHealth's belief \#3: "The government can\rq{}t build the solution." deeply resonates with both my personal and professional experience with these inefficient systems. It is clear NexHealth is making great strides in lowering the hurdles I often face as a parental advocate. After adopting our children, I want to leverage every skill and ability I possess to further the mission to lower that hurdle. The etymology of the word “passion” stems from physical suffering - my passion for improving healthcare stretches beyond warm fuzzies for helping others, it stems from suffering with my children. No passion is greater than a mother\rq{}s love for her children - this is the passion I will bring to NexHealth clients.
+	
+	Given my experience, passion, and growth mindset constistantly seeking Radical Candor, I have confidence I will become an integral team player for NexHealth's Customer Success Revenue Operations.	
+\end{flushleft}
+
+
+
+%----------------------------------------------------------------------------------------
+
+\hspace*{.6\linewidth} Best wishes, \\
+\hspace*{.57\linewidth} \includegraphics[width=0.30\linewidth]{TheresaWohleverSignature.png}  {\vspace{-9pt}} \\
+\hspace*{.6\linewidth}  Theresa Wohlever
+
+\end{document}

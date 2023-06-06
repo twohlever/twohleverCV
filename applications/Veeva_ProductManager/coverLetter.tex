@@ -1,0 +1,111 @@
+\documentclass[10pt,letterpaper]{article}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\input{../../preamble}
+
+
+%
+% Format for Letter
+%
+\geometry{
+	top    = 1.0in,
+	bottom = 1.0in,
+	left   = 1.0in,
+	right  = 1.0in
+}
+\setlength{\parindent}{0pt}% Remove paragraph indent
+\setlength{\parskip}{1.5em}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%
+% DEFINE RECEPIENT PERSONAL INFORMATION
+%
+
+\newcommand{\titleto}[1]{\renewcommand{\titleto}{#1}}
+\newcommand{\nameto}[1]{\renewcommand{\nameto}{#1}}
+\newcommand{\addrto}[1]{\renewcommand{\addrto}{#1}}
+
+\titleto{}
+\nameto{Veeva Research \& Development} % Addressee of the letter above the to address
+\addrto{
+\\
+601 W Office Center Dr. \\
+Fort Washington, PA 19034 \\
+}
+
+
+
+%
+% DEFINE HEADER
+%
+\rhead{
+ 		\authorname 	\\
+ 		\streetaddress  \\
+ 		\citystatezip
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  BEGIN DOCUMENT
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagenumbering{gobble} %% No page numbers
+%----------------------------------------------------------------------------------------
+%	DATE
+%----------------------------------------------------------------------------------------
+
+\begin{flushright}
+    \today
+\end{flushright}
+
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+\nameto
+\addrto
+
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+Dear \titleto \hspace{0.2 mm} \nameto,
+
+\begin{flushleft}
+
+	I am writing to express my interest in the open Product Manager position at Veeva. With over a decade of experience in remote Bioinformatics project management, a proven track record of orchestrating cross-functional software development projects, and desire to learn Product Management skills, I believe I possess the expertise and passion necessary to increase and optimize value for Veeva customers.
+
+	Between April 2013 to May 2014 QIAGEN acquired CLC bio, Ingenuity Systems, and Biobase. To ensure clear and consistent customer communication as well as operational continuity, QIAGEN leadership prioritized integration across all four Customer Relationship Management (CRM) systems. We chose to consolidate all four legacy organizations' customer data into SalesForce. Through 2015 I led the CLC bio support component of SalesForce integration. CLC bio’s CRM was internally developed software; mapping this unique framework to SalesForce’s expectations in such a way that also met the needs of Ingenuity, Biobase, and QIAGEN was non-trivial. With team-centric values and clear prioritization of mission critical components, all stakeholders came together to identify and execute solutions to meet key objectives. I came away from that experience with significant learnings both on a technical level regarding SalesForce functionality, as well as a collaborative level due to stakeholder diversity.
+	
+	At QIAGEN I led diverse international teams in both clinical and non-clinical projects, shepherding the full Software Development Lifecycle (SDLC) for custom bioinformatic projects from conception to completion. I’ve facilitated cross-functional teams of various sizes and skill sets delivering high-quality solutions.These solutions include customized software for Monsanto, Labcorp, and the FDA.
+	
+	I’ve demonstrated success within the scope of typical data analysis, project manager, and scrum master roles throughout my career. I never actively sought those titles, those functions stemmed out of recognizing and independently tackling the white space between future success and current reality. Through most of my career, I’ve communicated what it seems my role ought to entail, received approval, then executed on it. Today, I’m seeking more aggressive learning opportunities in strategy development and long term product roadmap planning. I am hopeful for the opportunity to pour into the Blue Ocean Veeva created by Doing the Right Thing.
+	
+	I look forward to authentically discuss how our values align and how my background and passions support driving value in Veeva’s open Product Management role. Thank you for your consideration.
+	
+
+\end{flushleft}
+
+%----------------------------------------------------------------------------------------
+
+\hspace*{.6\linewidth} Best wishes, \\
+\hspace*{.57\linewidth} \includegraphics[width=0.30\linewidth]{TheresaWohleverSignature.png}  {\vspace{-9pt}} \\
+\hspace*{.6\linewidth}  Theresa Wohlever
+
+\end{document}

@@ -1,0 +1,59 @@
+
+https://www.linkedin.com/jobs/view/3604486957/
+
+https://careers.veeva.com/job/16479390/product-manager-opendata-remote/?lever-origin=applied&lever-source%5B%5D=Veeva-career-site
+
+Veeva Systems is a mission-driven organization and pioneer in industry cloud, helping life sciences companies bring therapies to patients faster. As one of the fastest-growing SaaS companies in history, we surpassed $2B in revenue in our last fiscal year with extensive growth potential ahead.
+
+At the heart of Veeva are our values: Do the Right Thing, Customer Success, Employee Success, and Speed. We’re not just any public company – we made history in 2021 by becoming a public benefit corporation (PBC), legally bound to balancing the interests of customers, employees, society, and investors.
+
+As a Work Anywhere company, we support your flexibility to work from home or in the office, so you can thrive in your ideal environment.
+
+Join us in transforming the life sciences industry, committed to making a positive impact on its customers, employees, and communities.
+
+The Role
+
+
+We are looking for a Product Manager to join an energized product management team who will be in charge of implementing the NA Product strategy for the data offering in North America.
+
+You will actively collaborate in the identification, analysis, and selection of available data sources and implementation of the needed quality and monitoring procedures according to the company-identified standards. The Product Manager will interact at various levels with customer success, services, data operation, sales teams, marketing & the research center to ensure that all processes reflect local market specificities and deliver use value. You shall engage with clients and/or specific events at the local level if requested.
+
+If you have a passion for data and quality – this is a great opportunity for you! Your role will be remote with team meeting trips to our Veeva Office in Fort Washington, PA. Qualified candidates must be legally authorized to be employed in the United States.
+What You’ll Do
+To research and understand client and market requirements to develop short- and long-term product roadmaps and plans in conjunction with the entire product development team
+Focus on user pain points and implement products strategy, collecting and synthesizing input from customers, partners, executives, sales, services, and engineering
+To stay aligned to local market evolution to identify new needs and transfer these to the product development team
+To make sure the local database and processes reflect the standards of quality identified at a corporate level
+To work with the data acquisition and data stewardship team to ensure local data processing reaches the highest level of efficiency
+To demonstrate the product to internal and external clients to provide support to other areas of the organization including Services, Customer Success, Research Center, Sales & Strategy
+Understand the MDM application and actively participate in the data management process definition
+Requirements
+
+Data Analytical skills
+Can query a database (e.g. SQL)
+Product Management
+Project Management
+Interpersonal & communication skills
+High-level presentation capabilities
+Team player
+Autonomous and proactive
+Ability to work under pressure
+Fluent in English
+Nice to Have
+
+Experience working with MDM (master data management applications)
+Basic Marketing knowledge
+BI or Data analysis experience
+Pharma company SFE/Marketing/IT working experience
+Working experience with databases/data products such as SQL, PostgreSQL
+A Bachelor of Science in Computer Engineering or equivalent is highly desirable
+Exposure to Salesforce CRM
+Perks & Benefits
+
+Allocations for continuous learning & development
+Health & wellness programs
+#LI-RemoteUS
+#BI-Remote
+Veeva’s headquarters is located in the San Francisco Bay Area with offices in more than 15 countries around the world.
+
+Veeva is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, sex, sexual orientation, gender identity or expression, religion, national origin or ancestry, age, disability, marital status, pregnancy, protected veteran status, protected genetic information, political affiliation, or any other characteristics protected by local laws, regulations, or ordinances. If you need assistance or accommodation due to a disability or special need when applying for a role or in our recruitment process, please contact us at talent_accommodations@veeva.com. Position may not be eligible for remote work in Colorado.
