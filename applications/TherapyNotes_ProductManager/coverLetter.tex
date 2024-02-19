@@ -1,0 +1,108 @@
+\documentclass[10pt,letterpaper]{article}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\input{../../preamble}
+
+
+%
+% Format for Letter
+%
+\geometry{
+	top    = 1.0in,
+	bottom = 1.0in,
+	left   = 1.0in,
+	right  = 1.0in
+}
+\setlength{\parindent}{0pt}% Remove paragraph indent
+\setlength{\parskip}{1.5em}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%
+% DEFINE RECEPIENT PERSONAL INFORMATION
+%
+
+\newcommand{\titleto}[1]{\renewcommand{\titleto}{#1}}
+\newcommand{\nameto}[1]{\renewcommand{\nameto}{#1}}
+\newcommand{\addrto}[1]{\renewcommand{\addrto}{#1}}
+
+\titleto{}
+\nameto{TherapyNotes Team} % Addressee of the letter above the to address
+\addrto{
+\\
+\\
+}
+
+
+
+%
+% DEFINE HEADER
+%
+\rhead{
+ 		\authorname 	\\
+ 		\streetaddress  \\
+ 		\citystatezip
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  BEGIN DOCUMENT
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagenumbering{gobble} %% No page numbers
+%----------------------------------------------------------------------------------------
+%	DATE
+%----------------------------------------------------------------------------------------
+
+\begin{flushright}
+    \today
+\end{flushright}
+
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+% \nameto
+% \addrto
+
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+Dear \titleto \hspace{0.2 mm} \nameto,
+
+\begin{flushleft}
+	
+	A week of persistent phone calls, emails, and a healthy dose of pleading finally resulted in transferring ~300 pages of my children\rq{}s medical history to our new pediatrician. We haven\rq{}t attempted the records from talk therapy, occupational therapy, speech therapy, psychiatry, or psychology. It\rq{}s not urgent; we\rq{}re on waiting lists. As an adoptive parent of former foster youth, I am familiar with the challenges of coordinating healthcare. These challenges are consistent with what is considered best in class. Within the scope of IT, contemporary healthcare is trapped in the class of 1984. Joining in “Two Minutes Hate” is tempting; instead I will direct my passion to lowering the hurdle for children like ours to access appropriate care. My primary career goal is to make dramatic improvement in healthcare IT as a health systems Product Manager.
+
+	While my formal education is in bioinformatic software development, my most fulfilling successes are connecting cross-functional teams to symbiotic solutions. Pursuit of productive collaboration by courageously and tactfully working through crucial conversations is my cultivated strength. My role in professional services taught me how easy it is to immediately commit “yes” to client requests. However, transparency and integrity prove higher value long-term benefits over positive yet fleeting social encounters. When scope, schedule, and budget are out of balance, all parties are dissatisfied. I aim to align these fronts within Healthcare IT by leveraging my demonstrated strengths as patient advocate, technical translator, and project manager.
+ 
+	My current IT Manager role began with the ambiguous request to “make the team better.” The team consists of \(\sim \)7 bioinformaticians with a decade of entrenchment in their current roles and another \(\sim \)7 new hires. My vision for the team is to transition the culture away from siloed individual activities and embrace the significant benefits that stem from authentic collaboration. We\rq{}ve faced quite a few challenges but upfront trust building efforts are paving the way to ensure current development work is built on the foundation of psychological safety felt by every individual.  
+	
+	I\rq{}ve demonstrated success within the scope of typical data analysis, project manager, product owner, scrum master, and manager roles throughout my career. Today, I\rq{}m seeking opportunities to make real impact in Behavioral Healthcare. I look forward to authentically discussing how our values align and how my background and passions support driving value in TherapyNotes\rq{}s open Product Management role. Thank you for your thoughtful consideration.
+	
+
+\end{flushleft}
+
+%----------------------------------------------------------------------------------------
+
+\hspace*{.6\linewidth} Best wishes, \\
+\hspace*{.57\linewidth} \includegraphics[width=0.30\linewidth]{TheresaWohleverSignature.png}  {\vspace{-9pt}} \\
+\hspace*{.6\linewidth}  Theresa Wohlever
+
+\end{document}

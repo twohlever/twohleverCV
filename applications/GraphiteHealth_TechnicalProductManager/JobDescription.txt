@@ -1,0 +1,65 @@
+https://boards.greenhouse.io/graphitehealth/jobs/4024138006
+
+https://catalyst.nejm.org/doi/full/10.1056/CAT.21.0189
+
+Recruiter:
+Harvey Alcabes
+https://www.linkedin.com/in/harveyalcabes/
+
+Senior Technical Product Manager
+(View all jobs)
+United States - Remote
+About Graphite:
+A Common Language for Digital Health
+ 
+Graphite is a software company creating the first comprehensive digital ecosystem for the frictionless exchange of health data. This has been tried before, but never in this way. We are a non-profit, partnering with leading healthcare organizations to achieve the critical mass necessary to align around a de facto industry standard. By doing this together, we are ensuring this is done for the benefit of all. For more information please visit www.graphitehealth.io.
+Job Summary: 
+We are hiring a Sr. Technical Product Manager to join our team and have a significant impact on our product roadmap.  In this role, you will be responsible for technical product management across Graphite products with a focus on our Interoperability Platform.  The role consists of both internal and external product management responsibilities. Internally facing responsibilities will include working with internal stakeholders to develop product strategy and roadmaps.  External responsibilities will include interacting with end-users, health systems partners and ISVs to collect product feedback and capture future product requirements. You will work cross collaboratively with all teams to ensure successful product delivery.
+
+This role can be 100% remote in the USA; it is a full-time role and offers extensive benefits including a healthcare plan.
+Responsibilities:
+Research, build and maintain high-level product vision, strategy, and roadmaps 
+Incorporate data, research, and market analysis to lead definition of strategic direction for Graphite's products and actionable work items for engineering 
+Communicate product strategy and vision to key stakeholders for external and internal use 
+Work collaboratively with technical leaders to align product roadmap with engineering capacity and help sequence product engineering backlog 
+Interact with external end users to solicit product feedback and participate in co-creation opportunities 
+Provide ongoing updates with regards to product status, features, functions and expected ship dates 
+Support various responsibilities in the product management team to ensure timely delivery of products that meet the market’s needs 
+Active role in recruiting and building a high-performing Product Management team 
+Minimum Qualifications:
+Bachelor's degree in a technical field 
+7+ years of product management or related industry experience 
+Prior experience with health data interoperability at a health technology software product company 
+Experience taking one or more healthcare software products through the full product lifecycle, from conception to launch to ongoing optimization through data analysis and customer feedback 
+Experience with SDKs, APIs, or related products for software developers 
+Start-up mentality, energized by delivering new products, testing new concepts, and rapidly iterating/evolving based on response 
+Preferred Qualification:
+Education and/or experience in Computer Science and Software Development
+Work Environment:
+Fast-paced work environment
+Work in a quiet remote work environment
+Be available for collaborative work (via computer, videoconference, teleconference, etc.) during Graphite working hours, Monday through Friday
+Sit for prolonged periods working on a computer
+Lift basic office equipment and supplies
+Periodic travel (including air travel) may be required
+Perks and Benefits:
+Graphite offers comprehensive benefit options designed to provide choice and flexibility, including: 
+Top-tier medical, dental and vision plans 
+Flexible Spending Account 
+Short- and long-term disability plans 
+Life and AD&D 
+Voluntary benefits, including options such as accident insurance and pet insurance 
+You will be eligible for: 
+Annual performance bonuses 
+401(k) plan participation with employer match 
+A home-office stipend
+Generous time-off policy, with: 
+Unlimited PTO 
+Paid Holidays 
+Additional benefits include: 
+Remote-first work environment 
+Flexible work schedules 
+Professional development reimbursement 
+ 
+Are you interested in tackling some of healthcare’s toughest challenges, working in a company culture rooted in Doing Good, and improving the lives of others? Come join us!
+

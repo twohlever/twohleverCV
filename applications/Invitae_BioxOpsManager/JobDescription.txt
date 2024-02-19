@@ -1,0 +1,65 @@
+https://boards.greenhouse.io/invitae/jobs/4600552?gh_jid=4600552
+https://www.linkedin.com/jobs/view/3484408993/
+
+About the job
+Invitae (NYSE: NVTA) is a leading medical genetics company trusted by millions of patients and their providers to deliver timely genetic information using digital technology. We aim to provide accurate and actionable answers to strengthen medical decision-making for individuals and their families. Invitae's genetics experts apply a rigorous approach to data and research, serving as the foundation of their mission to bring comprehensive genetic information into mainstream medicine to improve healthcare for billions of people.
+
+Manager, Bioinformatics Operations
+
+Remote in the U.S.A
+
+Invitae is dedicated to bringing comprehensive genetic information into mainstream medicine to improve healthcare for billions of people. Our team is driven to make a difference for the patients we serve. We are leading the transformation of the genetics industry by making clinical-grade genetic information affordable and accessible to guide health decisions across all stages of life.
+
+We’re looking for people who are passionate about helping improve healthcare to join us. We are seeking a Clinical Data Quality Analyst Lead who will support the team in monitoring our genetic testing pipeline using custom software tools to ensure samples move through efficiently. Successful candidates will take initiative to coordinate and coach their team, set a clear direction aligned with department and company objectives, and innovate new approaches to existing workflows. An important part of this job is to be able to clearly communicate technical findings to non-technical teammates.
+
+What You’ll Be Doing
+Recruit, hire, align, and coach a high-performing team
+Serve the team as both a technical and people leader
+Translate business requirements across the company to best-in-class experiences
+Facilitate problem-solving across teams and implement data-driven decisions
+Anticipate and respond to quickly changing priorities
+Proactively recognize production bottlenecks, investigate their causes, and facilitate lasting solutions
+Drive technical excellence and effective execution within the team
+Develop and improve SOPs
+Assist process development programs
+What You Bring
+Flexible schedule, including being able to commit to weekend support if required
+4+ years experience in NGS bioinformatics (eg. samtools, bwa, Picard, GATK) or combination of education and experience
+2+ years experience working in a molecular biology context and troubleshooting lab or software pipelines and a BS Degree, or 4 years total related experience.
+2+ yrs experience manipulating data and troubleshooting applications in UNIX-based environments
+Successfully built and led teams in a production or manufacturing environment
+Evaluated and established strategic goals in an production environment
+Coached and mentored team members of diverse backgrounds and skillsets
+Exemplary communication and interpersonal skills with people of various backgrounds
+Successfully triage and resolve production incidents
+Familiarity with LIMS best practices and working in a lab environment
+Working knowledge of molecular genetics and experience with next generation sequencing data, preferably in a production setting
+Experience writing scripts to analyze data (e.g. Python, R)
+Superior oral and written communication skills and the ability to clearly communicate technical findings to non-technical teammates
+Excellent ability to work with people across different teams and specializations
+Preferred: Hands-on molecular biology wet lab experience
+Preferred: Background in life and physical sciences
+Preferred: Software development and database querying experience (e.g. Flask with PostgreSQL)
+By joining Invitae, you’ll work alongside some of the world’s experts in genetics and healthcare at the forefront of genetic medicine. We’ve crafted a culture that empowers our teams and our teammates to have the biggest impact and to explore their interests and capabilities. We prize freedom with accountability and offer significant flexibility, along with excellent benefits and competitive pay in a fast-growing organization.
+
+Join us!
+
+Please apply even if you don’t meet all of the “What you bring” requirements noted. It’s rare that someone checks every single item, it’s ok, we encourage you to apply anyway.
+
+At Invitae, we value diversity and provide equal employment opportunities (EEO) to all employees and applicants without regard to race, color, religion, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status. We will consider for employment qualified applicants with criminal histories in a manner consistent with the requirements of the San Francisco Fair Chance Ordinance.
+
+This salary range is an estimate, and the actual salary may vary based on a wide range of factors, including your skills, qualifications, experience and location. This position is eligible for benefits including but not limited to medical, dental, vision, life insurance, disability coverage, flexible paid time off, Spring Health, Carrot Fertility, participation in a 401k with company match, ESPP, and many other additional voluntary benefits. Invitae also offers generous paid leave programs so you can spend time with your new child, recover from your own illness or care for a sick family member.
+
+USA National Pay Range
+
+$134,720—$168,400 USD
+
+Please apply even if you don’t meet all of the “What you bring” requirements noted. It’s rare that someone checks every single item, it’s ok, we encourage you to apply anyways.
+
+Join us!
+
+At Invitae, we value diversity and provide equal employment opportunities (EEO) to all employees and applicants without regard to race, color, religion, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status. We will consider for employment qualified applicants with criminal histories in a manner consistent with the requirements of the San Francisco Fair Chance Ordinance.
+
+We truly believe a diverse workplace is crucial to our company's success and to better serve our diverse patients. Your input is especially valuable. We’d greatly appreciate it if you can take a quick moment to make your selection(s) below. Submissions will be anonymous.
+
+You can find a detailed explanation of our privacy practices here.

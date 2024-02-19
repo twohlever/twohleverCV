@@ -1,0 +1,65 @@
+https://computercraft.applytojob.com/apply/vrVzebEb5e/Project-Manager
+
+The National Center for Biotechnology Information (NCBI) is looking for a Project Manager to coordinate the full software development lifecycle (SDLC) in a scientific environment, including defining technical and functional requirements, quality control planning, implementation, upgrades, and integration with existing NCBI systems through Agile Process methodology. Position includes daily coordination of complex technical projects dealing with scientific and genomic data. Participate in and provide technical and administrative expertise to software development projects. This is a full-time position which is currently remote. 
+
+Will be responsible for tracking milestones and producing deliverables.  Balances risks, schedules, and resources.  Coordinates cross-functional teams of various sizes with diverse technical skills sets. Advises senior management on technical issues.   Communicates project issues to stakeholders and senior management. 
+
+NCBI is part of the National Library of Medicine (NLM) at the National Institutes of Health (NIH).  NCBI is the world’s premier biomedical center hosting over six million daily users that seek research, clinical, genetic, and other information that directly impacts biomedical research and public health – at NCBI you can literally help to accelerate cures for diseases! NCBI provides free access to petabytes of biomedical and genomic information, and scientists all over the world use its products. NCBI’s wide range of applications, platforms (node, python, Django, C++, you name it) and environments (big data [petabytes], machine learning, multiple clouds) serve more users than almost any other US Government Agency according to https://analytics.usa.gov/. 
+
+This particular position will support several efforts within the Customer Services Division (CSD). 
+
+ 
+
+Required Skills  
+
+ 
+
+Formal education (minimum: bachelor's degree) in a related field. 
+
+Demonstrated strong experience managing and coaching software development teams using Agile methodology 
+
+Requires at least 5 years of project management experience and at least 5 years of experience developing software and/or managing the software development. 
+
+Fluency with Atlassian tools 
+
+Technical Knowledge of software application development 
+
+Experience managing software development projects using Agile methodology 
+
+Experience with project management best practices and ability to keep teams on track 
+
+Experience coordinating work across multiple teams and departments 
+
+Effective verbal and written communications 
+
+Experience in delivery of complex enterprise level software development projects 
+
+ 
+
+Desired Skills 
+
+ 
+
+Master’s degree preferred 
+
+Experience with scientific or biological data a plus 
+
+Experience with web development (CSS, Django, JavaScript) 
+
+Experience working with large databases, statistical analysis, and clinical data 
+
+Experience with conference planning 
+
+Experience with large distributed systems and cloud computing 
+
+ 
+
+The compensation for this position will be based on the experience of the successful candidate. The expected pay range for this position is $135,000 to $160,000 annually. 
+
+ 
+
+Computercraft offers an excellent benefits package that includes health, dental, vision, and disability and life insurance; a 401(k) plan with matching; paid leave starting at 128 hours/year for the first 3 years of employment; and 11 paid holidays. We also offer the opportunity for a positive work–life balance with a standard 40-hour work week and the chance to work alongside a team of highly accomplished professionals.
+
+To learn about other Computercraft job opportunities, please visit the Careers section of our website: https://www.computercraft-usa.com/.
+
+EEO Employer—Disability/Veteran/Minority/Female/Sexual Orientation/Gender Identity

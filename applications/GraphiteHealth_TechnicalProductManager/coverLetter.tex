@@ -1,0 +1,117 @@
+\documentclass[10pt,letterpaper]{article}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\input{../../preamble}
+
+
+%
+% Format for Letter
+%
+\geometry{
+	top    = 1.0in,
+	bottom = 1.0in,
+	left   = 1.0in,
+	right  = 1.0in
+}
+\setlength{\parindent}{0pt}% Remove paragraph indent
+\setlength{\parskip}{1.5em}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%
+% DEFINE RECEPIENT PERSONAL INFORMATION
+%
+
+\newcommand{\titleto}[1]{\renewcommand{\titleto}{#1}}
+\newcommand{\nameto}[1]{\renewcommand{\nameto}{#1}}
+\newcommand{\addrto}[1]{\renewcommand{\addrto}{#1}}
+
+\titleto{}
+\nameto{Harvey Alcabes} % Addressee of the letter above the to address
+\addrto{
+\\
+\\
+}
+
+
+
+%
+% DEFINE HEADER
+%
+\rhead{
+ 		\authorname 	\\
+ 		\streetaddress  \\
+ 		\citystatezip
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  BEGIN DOCUMENT
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagenumbering{gobble} %% No page numbers
+%----------------------------------------------------------------------------------------
+%	DATE
+%----------------------------------------------------------------------------------------
+
+\begin{flushright}
+    \today
+\end{flushright}
+
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+% \nameto
+% \addrto
+
+%% What health technology product(s) have you built? How was health data interoperability handled in these products? 
+%% My team at Labcorp builds pipelines to generate patient reports from raw NGS sequencing data.We primarily depend on XML and json formats, in addition to standard bioinformatic file format conventions (eg. bam, vcf, gff, etc.)
+
+%% How were external software developers enabled to interface to your product(s)? *
+%% [i.e., What sort of interfaces did your product(s) provide to external software developers?]
+%% At QIAGEN, our development team supported an SDK with strong encouragement to used Eclipse as the IDE for CLC bio software. Ingenuity (QCI-I) provided a RESTFUL API.
+
+
+%% Our products will be used by software developers. What professional experience have you had as a software developer? *
+%% I've always been able to teach myself what I need to validate output in a systematic way (eg. RegEx) or pull what I need out of a database (eg. SQL).  I can brute force my way to the result I need for a specific task, but it will not be efficient and will be considered a rough prototype at best. I enjoy people more than programing, and programmers prefer I keep my git commits in the sandbox. However, I am committed to building a strong rapport  with software developers and relish the opportunity to sit with them through the debugging trenches to ensure I am an effective and accurate communicator regarding what can be expected of existing versions and what features can be anticipated in the future.  
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+Dear \titleto \hspace{0.2 mm} \nameto,
+
+\begin{flushleft}
+	I pored through stacks of disorganized paper the night of April 6, 2022 to find the three month old girl placed in our care had the 22q11.21 duplication detected by Affymetrix CytoScanHD. The foster agency possessing access to her electronic medical records did not know of her Likely Pathogenic mutation; we found it through papers passed on to us. The six weeks we were her primary caretakers made the long journey remaining for effective use of Electronic Health Records (EHR) visible to me. Due to this experience I hold significant appreciation for Graphite Health\rq{}s Vision of Interoperability. I consider it an honor to play an active role in furthering this vision as Product Manager. With a decade of experience in remote Bioinformatics projects, a proven track record of orchestrating cross-functional software development, and a deeply personal desire to improve healthcare equity, I believe I possess the expertise and passion necessary to drive Graphite Health\rq{}s Interoperability mission through noteworthy milestones.
+	
+	At QIAGEN I led diverse international teams in both clinical and non-clinical projects, shepherding the full Software Development Lifecycle (SDLC) for custom bioinformatic software from conception to completion. I\rq{}ve enjoyed the privilege of mentoring junior colleagues located in the U.S., Denmark, India, and Romania. I\rq{}ve facilitated cross-functional teams of various sizes and skill sets delivering high-quality solutions. These solutions include customized software for Monsanto, Labcorp, and the FDA. Our team\rq{}s success stemmed from fostering an empathetic ear open to feedback, commitment to consistent iterative improvement, and clear stakeholder communication. As Product Owner, I sustained QIAGEN's relationship with multiple clients generating millions of USD in revenue. I developed such a strong relationship with the Labcorp\rq{}s Vice President  “Data Science, Artificial Intelligence, and Bioinformatics” that I was actively recruited for my current role. 
+	 
+	My current IT Manager role began with the ambiguous request to “make the team better.” The team consists of \(\sim \)7 bioinformaticians with a decade of entrenchment in their current roles and another \(\sim \)7 new hires. My vision for the team is to transition the culture away from siloed individual activities and embrace the significant benefits that stem from authentic collaboration. We\rq{}ve faced quite a few challenges but upfront trust building efforts are paving the way to ensure current development work is built on the foundation of psychological safety felt by every individual.  
+	
+	I\rq{}ve demonstrated success within the scope of typical data analysis, project manager, product owner,  scrum master, and manager roles throughout my career. Today, I\rq{}m seeking more aggressive learning opportunities in strategy development and longer term product roadmap planning. I look forward to authentically discussing how our values align and how my background and passions support driving value in Graphite Health\rq{}s open Product Management role. Thank you for your thoughtful consideration.
+	
+
+\end{flushleft}
+
+%----------------------------------------------------------------------------------------
+
+\hspace*{.6\linewidth} Best wishes, \\
+\hspace*{.57\linewidth} \includegraphics[width=0.30\linewidth]{TheresaWohleverSignature.png}  {\vspace{-9pt}} \\
+\hspace*{.6\linewidth}  Theresa Wohlever
+
+\end{document}

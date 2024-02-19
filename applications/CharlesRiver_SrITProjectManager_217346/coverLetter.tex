@@ -1,0 +1,108 @@
+\documentclass[10pt,letterpaper]{article}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\input{../../preamble}
+
+
+%
+% Format for Letter
+%
+\geometry{
+	top    = 1.0in,
+	bottom = 1.0in,
+	left   = 1.00in,
+	right  = 1.00in
+}
+\setlength{\parindent}{0pt}% Remove paragraph indent
+\setlength{\parskip}{1.3em}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%
+% DEFINE RECEPIENT PERSONAL INFORMATION
+%
+
+\newcommand{\titleto}[1]{\renewcommand{\titleto}{#1}}
+\newcommand{\nameto}[1]{\renewcommand{\nameto}{#1}}
+\newcommand{\addrto}[1]{\renewcommand{\addrto}{#1}}
+
+\titleto{Charles River Labs}
+\nameto{IT Hiring Manager} % Addressee of the letter above the to address
+\addrto{
+\\
+Charles River Labs \\
+299 Ballardvale Street \\
+Wilmington, MA, US, 01887 \\
+}
+
+
+
+%
+% DEFINE HEADER
+%
+\rhead{
+ 		\authorname 	\\
+		\streetaddress  \\
+ 		\citystatezip
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%  BEGIN DOCUMENT
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagenumbering{gobble} %% No page numbers
+%----------------------------------------------------------------------------------------
+%	DATE
+%----------------------------------------------------------------------------------------
+
+\begin{flushright}
+    \today
+\end{flushright}
+
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+\nameto
+\addrto
+
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+Dear \titleto \hspace{0.2 mm} \nameto,
+\begin{flushleft}
+I am a seasoned remote Bioinformatics Manager with demonstrated success leading cross-functional software development projects for both clinical and non-clinical applications. I have a track record of consistent delivery in project management roles amidst a fast-paced, rapidly changing environment. Given my past success, I’m writing to express my interest for the open IT Project Manager (217346) role at Charles River Laboratories.
+
+I became a fully remote employee in 2013 when I moved away from Boston, MA for family. Through my remote tenure, leadership periodically asked if I would manage the team through times of uncertainty. I enjoyed lifting my reports to become their best selves resulting in high quality outcomes from California to Denmark to Romania. At the height of the pandemic, the Director of our Custom Services team vacated the position. I stepped up to fill this role. Once granted insight into the scope and timelines for incoming projects along with available resources, I understood my former Director’s flight. I quickly committed to onboard Romania based employees in an attempt to close the pandemic-induced resource gap. Meanwhile, I aligned client and Key Account Manager expectations with Development and Product team realities. Though many of the ensuing client conversations proved diplomatically challenging we navigated through with positive outcomes on all sides. With tremendous effort by every individual on the team we met client expectations for all but one failed project.
+
+It’s easy to immediately commit “yes” to client requests: all parties appear to be in agreement and excited for future outcomes. However, transparency and integrity prove higher value long term benefits over positive yet fleeting social interactions. The above referenced failed project was theoretically an exciting challenge but the technical realities were not market ready. Unfortunately the individuals who made the client commitment did not fully understand the situation. As soon as I became involved, I requested leadership support in renegotiating deliverables. Failure proved to be an excellent learning experience for all parties. While difficult, this was the right decision. I learned how to handle delicate high stakes conversations as evidenced by the client offering me employment opportunities during my post-covid "sabatical.'
+
+I am well versed in AGILE methodology, primarily leveraged through Atlassian offerings (JIRA). As an AGILE advocate, I've presented its value to over 300 internal IT coworkers including multiple VP leaders within Labcorp IT. I've effectively influenced AGILE (Kanban) practices on my current team to drive efficiency, productivity, and meaningful contributions. I have successfully guided teams, sized 2 to 25, through the full software development lifecycle (SDLC) in scientific environments. I will not claim to always evade scope creep, but am well versed in tactfully communicating its impact to stakeholders. As a former software supporter, I’m adept at diffusing conflict and elevated emotions that may arise from more challenging conversations with stakeholders.
+
+I believe my experience will add significant value to Charles River Labs – particularly within the scope of global project management, stakeholder alignment, and AGILE advocacy. I am hopeful for the opportunity to discuss how Charles River’s needs pair with my desired growth and background.
+\end{flushleft}
+
+%----------------------------------------------------------------------------------------
+
+\hspace*{.6\linewidth} Best wishes, \\
+\hspace*{.57\linewidth} \includegraphics[width=0.30\linewidth]{TheresaWohleverSignature.png}  {\vspace{-9pt}} \\
+\hspace*{.6\linewidth}  Theresa Wohlever
+
+\end{document}

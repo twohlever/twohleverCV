@@ -1,0 +1,57 @@
+https://foresight-dx.com/careers#director,-software-product-and-platform
+
+
+
+
+Location: Remote in the United States or remote/hybrid in the Denver, Colorado area
+
+
+About our Company:  Foresight Diagnostics is an early-stage, venture-backed molecular diagnostics company that is developing non-invasive cancer detection technologies to improve the lives of patients worldwide. Our portfolio of cell-free DNA based liquid biopsy tests are rooted in novel and proprietary methods developed at Stanford University. Our approach enables the earlier detection of smaller tumors, leading to more personalized and effective cancer treatment strategies for patients. We have deep expertise in molecular biology, bioinformatics, and Next Generation Sequencing (NGS), and maintain a dynamic, fast-paced work environment with significant opportunities for high-impact contribution and rapid professional growth. Foresight Diagnostics is headquartered in Aurora, Colorado.     
+
+About the Role:  We are seeking a technical leader in software development who will steer efforts to design and implement our NGS based sample to report workflows and platform.  The Director of Software Product and Platform will transform bioinformatic algorithms into enterprise grade applications within product platforms, ultimately creating robust automated sequencing to result workflows and enabling the rapid processing of patient samples. 
+
+The ideal candidate has experience mentoring and developing a strong team and will be able to quickly establish technical credibility. They will have the ability to bridge short-term goals with longer-term strategy and communicate it to a wide audience.  The ideal candidate possesses a positive, engaging and goal-oriented management style with a passion for making a difference in the world using scientific rigor and compute power.
+
+Remote candidates based in the United States, as well as those based in the greater Denver, CO area, are encouraged to apply.
+
+What You Will Do:
+
+Provide hands-on leadership of the software product and platform teams, including strategic direction and tactical instruction.
+
+Articulate and design the overall software vision and roadmap, while simultaneously supporting the implementation of our production workflows and cloud platforms.
+
+Support the optimization and productization of our internal R&D algorithms, including into regulated products compliant with IEC62304.
+
+Develop and implement a Data Lifecycle and Management Plan. 
+
+Work closely with other cross functional leaders to make sure we are building the right thing at the right time.
+
+Provide both leadership and experience in securing infrastructure, code and data.
+
+Grow the existing team, balanced with choosing the right external partnerships.
+
+What You Will Bring:
+
+5+ years managing high-performing technical teams in an environment of rapid development and company growth.
+
+Experience working in a regulated environment, preferably in the life sciences or other scientific domain.
+
+Ability to dissect complicated technical problems, simplify experiences and innovate through demonstrated automation
+
+Experience working in a team using Agile development and project management practices.
+
+Excellent Leadership skills including:
+
+Great at mentoring, coaching as well as being a diversity champion.
+
+Ability to manage senior staff and remote staff across multiple locations, time zones and cultures.
+
+Highly detail-oriented, deadline-driven, and able to embrace change without frustration.
+
+Experience leading re-organization and uniting teams to work collaboratively.
+
+Ability to communicate a compelling vision and inspire others to deliver on an ambitious, complex, roadmap.
+
+Strong analytical, strategic thinking and communication skills - must have ability to synthesize, develop and present clear and concise recommendations
+
+This role is offering a salary between $190,000-225,000, generous equity, along with medical, dental and vision benefits. You will be working on interesting problems with extremely high impact. We promote the professional development of our employees and will encourage upward mobility within the company for high performing employees. Foresight Diagnostics is an equal opportunity employer. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.
